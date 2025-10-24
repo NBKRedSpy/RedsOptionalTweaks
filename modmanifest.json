@@ -1,0 +1,9 @@
+{
+  "UniqueModName": "NBKRedSpy_RedsOptionalTweaks",
+  "Assemblies": [
+    "RedsOptionalTweaks.dll"
+  ],
+  "Dependencies": [],
+  "SteamTags": [
+  ]
+}
