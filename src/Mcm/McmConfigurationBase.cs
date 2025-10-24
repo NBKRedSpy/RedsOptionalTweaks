@@ -104,7 +104,7 @@ namespace RedsOptionalTweaks.Mcm
 
         protected ConfigValue CreateRestartMessage()
         {
-            return new ConfigValue("__Restart", "<color=#FBE343>The game must be restarted for any changes to take effect.", "Restart");
+            return new ConfigValue("__Restart", "<color=#FF0000>The game must be restarted for any changes to take effect.", "Restart");
 
         }
         /// <summary>
