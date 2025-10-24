@@ -14,10 +14,8 @@ The mod has the following functionality:
 
 [b]Quality of Life[/b] - Does not affect game balance
 [list]
-[*]
-⌨️ Mouse Quick Toss Rebind - Change the key bind for what the game calls "Fast Toss".  By default the game uses the Control key to move items between storage panes.
-[*]
-⌨️ Split Stacks Hotkeys - Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
+[*]⌨️ Mouse Quick Toss Rebind - Change the key bind for what the game calls "Fast Toss".  By default the game uses the Control key to move items between storage panes.
+[*]⌨️ Split Stacks Hotkeys - Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
 [/list]
 
 [b]Balance Change[/b]

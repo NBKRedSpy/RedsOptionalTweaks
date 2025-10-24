@@ -11,17 +11,16 @@ Enable by checking the "Enable" box for each piece of functionality.  After savi
 # Tweaks Overview
 The mod has the following functionality:
 
-**Quality of Life** - Does not affect game balance  
+**Quality of Life** - Does not affect game balance
 
-* ⌨️ Mouse Quick Toss Rebind - Change the key bind for what the game calls "Fast Toss".  By default the game uses the Control key to move items between storage panes.  
-
-* ⌨️ Split Stacks Hotkeys - Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.  
+* ⌨️ Mouse Quick Toss Rebind - Change the key bind for what the game calls "Fast Toss".  By default the game uses the Control key to move items between storage panes.
+* ⌨️ Split Stacks Hotkeys - Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
 
 **Balance Change**
-* 🚀 Ship Speed Boost - Increase the speed of ship travel.   
+* 🚀 Ship Speed Boost - Increase the speed of ship travel.
 
 More
-* 🧪 More items in the future...  
+* 🧪 More items in the future...
 
 Each tweak can be configured in the Mods button on the main menu, under the "Red's Optional Tweaks" section.  
 For details on each tweak, see the related section below.
