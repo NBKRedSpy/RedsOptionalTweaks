@@ -2,11 +2,11 @@
 
 ![thumbnail icon](media/thumbnail.png)
 
-**Important**: This currently *only* works with the beta.
+# Why Optional?
+To prevent the user from being surprised by functionality, each change must be enabled in the "mods" menu.  Thus optional.
 
 # Description
-A collection of various tweaks which are mostly QoL.  All are disabled by default and must be enabled in the Mods config on the main menu.
-Enable by checking the "Enable" box for each piece of functionality.  After saving the changes, restart the game.
+A collection of various tweaks which are mostly QoL. Enable by checking the "Enable" box for each piece of functionality.  After saving the changes, restart the game.
 
 # Tweaks Overview
 The mod has the following functionality:
@@ -15,7 +15,7 @@ The mod has the following functionality:
 
 * ⌨️ Mouse Quick Toss Rebind - Change the key bind for what the game calls "Fast Toss".  By default the game uses the Control key to move items between storage panes.
 * ⌨️ Split Stacks Hotkeys - Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
-* ⌨️ Hold R while hovering over items in the ship cargo to move that item to the recycler tab.
+* ⌨️ Recycle Hotkey Quick Move - Hold R while hovering over items in the ship cargo to move that item to the recycler tab.
 
 **Balance Change**
 * 🚀 Ship Speed Boost - Increase the speed of ship travel.
@@ -47,9 +47,8 @@ Adds increase and decrease hotkeys to change the value by one.  By default it is
 Adds up to five preset amounts.  For example, the user can press 1 and the dialog will change the "keep" amount (the number on the right) to 10.
 By default, 1 is set to 10, and 2 is set to 5.
 
-## Move to Recycler
-Hold R while hovering over items in the ship cargo to move that item to the recycler tab.
-Avoids needing to move each item to the recycler with drag and drop.
+## Recycle Hotkey Quick Move
+Hold R while hovering over items in the ship cargo to move that item to the recycler tab.  Avoids needing to move each item to the recycler with drag and drop.
 
 # Compatibility - Technical
 For modders, here are the technical details.
