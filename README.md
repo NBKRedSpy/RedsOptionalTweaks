@@ -15,7 +15,7 @@ The mod has the following functionality:
 
 * ⌨️ Mouse Quick Toss Rebind - Change the key bind for what the game calls "Fast Toss".  By default the game uses the Control key to move items between storage panes.
 * ⌨️ Split Stacks Hotkeys - Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
-* ⌨️ Hold R on the cargo screen to move items to the recycler tab.
+* ⌨️ Hold R while hovering over items in the ship cargo to move that item to the recycler tab.
 
 **Balance Change**
 * 🚀 Ship Speed Boost - Increase the speed of ship travel.
@@ -48,7 +48,8 @@ Adds up to five preset amounts.  For example, the user can press 1 and the dialo
 By default, 1 is set to 10, and 2 is set to 5.
 
 ## Move to Recycler
-Enables a hotkey to recycle items from the inventory screen.  This allows the user to hold down the recycle key (defaults to R) to move items directly to the recycler in the inventory screen.
+Hold R while hovering over items in the ship cargo to move that item to the recycler tab.
+Avoids needing to move each item to the recycler with drag and drop.
 
 # Compatibility - Technical
 For modders, here are the technical details.
@@ -67,7 +68,7 @@ The list of valid keyboard keys can be found  at the bottom of https://docs.unit
 Beware that numbers 0-9 are Alpha0 - Alpha9.  Most of the other keys are as expected such as X for X.
 Use "None" to not bind the key.
 
-# Support the Modder
+# Enjoying the Mods?
 If you enjoy my mods and want to buy me a coffee, check out my [Ko-Fi](https://ko-fi.com/nbkredspy71915) page.
 Thanks!
 
