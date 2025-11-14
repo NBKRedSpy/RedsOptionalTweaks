@@ -76,9 +76,13 @@ namespace RedsOptionalTweaks
         /// <summary>
         /// How many times to repeat per second when holding the increase/decrease keys.
         /// </summary>
-        public float RepeatDelaySeconds { get; set; } = 0.125f;   
+        public float RepeatDelaySeconds { get; set; } = 0.125f;
 
         #endregion
-      
+
+        public bool EnableRecycleHotkey { get; set; }
+
+        public KeyCode RecycleHotkey { get; set; } = KeyCode.R;
+
     }
 }

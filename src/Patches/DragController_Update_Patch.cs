@@ -14,6 +14,9 @@ namespace RedsOptionalTweaks.Patches
 {
 
 
+    /// <summary>
+    /// Creates a patch to allow rebinding the mouse quick toss key.
+    /// </summary>
     [HarmonyPatch(typeof(DragController), nameof(DragController.Update))]   
     public static class DragController_Update_Patch
     {

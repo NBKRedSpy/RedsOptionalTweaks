@@ -71,6 +71,15 @@ namespace RedsOptionalTweaks.Mcm
                     "Split Amount Repeat Delay (seconds)",
                     0.05f, 1.0f, SplitStacksHotkeyHeader),
                 .. CreateAmountPresets(config.AmountPresets),
+
+                CreateConfigProperty(nameof(ModConfig.EnableRecycleHotkey),
+                    "Enables a hotkey to recycle items from the inventory screen.  This allows the user to hold down the recycle key " +
+                    "(defaults to R) to move items directly to the recycler in the inventory screen.",
+                    header: "Recycle Hotkey"),
+
+                CreateEnumDropdown<KeyCode>(nameof(ModConfig.RecycleHotkey),
+                    "The key to use to recycle items from the inventory screen.",
+                    "Recycle Hotkey", "Recycle Hotkey"),
             ];
 
             ModConfigMenuAPI.RegisterModConfig("Red's Misc Tweaks", configValues, OnSave);
@@ -82,7 +91,6 @@ namespace RedsOptionalTweaks.Mcm
             return base.OnSave(currentConfig, out feedbackMessage);
 
         }
-
 
         private const string PropertyPrefix = "AmountPresets_";
 

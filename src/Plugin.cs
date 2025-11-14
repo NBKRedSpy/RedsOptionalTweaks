@@ -24,6 +24,8 @@ namespace RedsOptionalTweaks
 
         public static Logger Logger = new Logger();
 
+        public static State State { get; set; } = null;
+
         internal static McmConfiguration McmConfiguration { get; private set; }
 
         [Hook(ModHookType.AfterConfigsLoaded)]
@@ -32,6 +34,8 @@ namespace RedsOptionalTweaks
 
             //Verify version
             if (!IsCompatibleWithGameVersion()) return;
+
+            State = context.State;  
 
             Directory.CreateDirectory(ConfigDirectories.ModPersistenceFolder);
             Config =  new ModConfig(ConfigDirectories.ConfigPath).LoadConfig();

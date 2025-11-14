@@ -16,6 +16,7 @@ The mod has the following functionality:
 [list]
 [*]⌨️ Mouse Quick Toss Rebind - Change the key bind for what the game calls "Fast Toss".  By default the game uses the Control key to move items between storage panes.
 [*]⌨️ Split Stacks Hotkeys - Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
+[*]⌨️ Hold R on the cargo screen to move items to the recycler tab.
 [/list]
 
 [b]Balance Change[/b]
@@ -57,6 +58,10 @@ Adds increase and decrease hotkeys to change the value by one.  By default it is
 Adds up to five preset amounts.  For example, the user can press 1 and the dialog will change the "keep" amount (the number on the right) to 10.
 By default, 1 is set to 10, and 2 is set to 5.
 
+[h2]Move to Recycler[/h2]
+
+Enables a hotkey to recycle items from the inventory screen.  This allows the user to hold down the recycle key (defaults to R) to move items directly to the recycler in the inventory screen.
+
 [h1]Compatibility - Technical[/h1]
 
 For modders, here are the technical details.
@@ -91,4 +96,9 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 [*]Special thanks to Crynano for his excellent Mod Configuration Menu.
 [*]The TF2 RedSpy icon is from the reddit user [url=https://www.reddit.com/user/iwilding/]iwilding[/url] from the post found [url=https://www.reddit.com/r/tf2/comments/2384j5/i_drew_a_red_spy/]here[/url]
 [*]The Ship Speed Boost is based on Steam user [url=https://steamcommunity.com/id/cybercritic]critic[/url]'s mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3548633074]Ship Speed Boost[/url].  The functionality is replicated with permission.
+[/list]
+
+[h1]1.1.0[/h1]
+[list]
+[*]Added "Move to Recycler" functionality
 [/list]
