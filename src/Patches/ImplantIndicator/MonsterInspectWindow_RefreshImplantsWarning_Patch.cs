@@ -19,6 +19,11 @@ namespace RedsOptionalTweaks.Patches.ImplantIndicator
 
         private static Color DefaultColor { get; set; } = Color.black;
 
+        public static bool Prepare()
+        {
+            return Plugin.Config.EnableAugmentIndicator;
+        }
+
         /// <summary>
         /// Attaches the Recycling hotkey functionality to the Arsenal screen.
         /// </summary>
@@ -34,7 +39,8 @@ namespace RedsOptionalTweaks.Patches.ImplantIndicator
                 {
                    DefaultColor = __instance._implantsWarning.color;
                 }
-                __instance._implantsWarning.color = hasImplants ? Color.green : DefaultColor;
+
+                __instance._implantsWarning.color = hasImplants ? Plugin.Config.ImplantIndicatorUnityColor : DefaultColor;
             }
         }
     }

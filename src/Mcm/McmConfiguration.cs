@@ -80,6 +80,13 @@ namespace RedsOptionalTweaks.Mcm
                 CreateEnumDropdown<KeyCode>(nameof(ModConfig.RecycleHotkey),
                     "The key to use to recycle items from the inventory screen.",
                     "Recycle Hotkey", "Recycle Hotkey"),
+
+                CreateConfigProperty(nameof(ModConfig.EnableAugmentIndicator), "Enableds recoloring the augment indicator on the " +
+                    "creature window if there is an implant.",
+                    header: "Augment Indicator"),
+
+                CreateConfigProperty(nameof(ModConfig.ImplantIndicatorColor), "The color to use for the implant indicator",
+                    header: "Augment Indicator"),
             ];
 
             ModConfigMenuAPI.RegisterModConfig("Red's Misc Tweaks", configValues, OnSave);

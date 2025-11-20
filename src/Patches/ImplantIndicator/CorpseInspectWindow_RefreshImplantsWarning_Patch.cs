@@ -12,12 +12,18 @@ namespace RedsOptionalTweaks.Patches.ImplantIndicator
 {
     /// <summary>
     /// Recolors the implant dot to green if there is at least one implant installed.
-    /// Handles the coloring if the creature is alive.
+    /// Handles the coloring if the creature is dead (corpse window).
     /// </summary>
     internal static class CorpseInspectWindow_RefreshImplantsWarning_Patch
     {
 
         private static Color DefaultColor { get; set; } = Color.black;
+
+
+        public static bool Prepare()
+        {
+            return Plugin.Config.EnableAugmentIndicator;
+        }
 
         /// <summary>
         /// Attaches the Recycling hotkey functionality to the Arsenal screen.
@@ -34,7 +40,7 @@ namespace RedsOptionalTweaks.Patches.ImplantIndicator
                 {
                    DefaultColor = __instance._implantsWarning.color;
                 }
-                __instance._implantsWarning.color = hasImplants ? Color.green : DefaultColor;
+                __instance._implantsWarning.color = hasImplants ? Plugin.Config.ImplantIndicatorUnityColor : DefaultColor;
             }
         }
     }
