@@ -14,7 +14,7 @@ namespace RedsOptionalTweaks.Patches.ImplantIndicator
     /// Recolors the implant dot to green if there is at least one implant installed.
     /// Handles the coloring if the creature is alive.
     /// </summary>
-    internal static class MonsterInspectWindow_RefreshImplantsWarning_Patch
+    internal static class CorpseInspectWindow_RefreshImplantsWarning_Patch
     {
 
         private static Color DefaultColor { get; set; } = Color.black;
@@ -23,12 +23,12 @@ namespace RedsOptionalTweaks.Patches.ImplantIndicator
         /// Attaches the Recycling hotkey functionality to the Arsenal screen.
         /// </summary>
 
-        [HarmonyPatch(typeof(MonsterInspectWindow), nameof(MonsterInspectWindow.RefreshImplantsWarning))]
+        [HarmonyPatch(typeof(CorpseInspectWindow), nameof(CorpseInspectWindow.RefreshImplantsWarning))]
         public static class ScreenWithShipCargo_Configure_Patch
         {
-            public static void Postfix(MonsterInspectWindow __instance)
+            public static void Postfix(CorpseInspectWindow __instance)
             {
-                bool hasImplants = AugmentationSystem.HasAnyInstalledImplants(__instance._inspectedCreature.CreatureData);
+                bool hasImplants = AugmentationSystem.HasAnyInstalledImplants(__instance._corpseStorage.CreatureData);
 
                 if (DefaultColor == Color.black)
                 {
