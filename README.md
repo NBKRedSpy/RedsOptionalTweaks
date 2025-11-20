@@ -1,46 +1,40 @@
-# Quasimorph Red's Optional Tweaks Mod
+# Quasimorph Red's Optional Modifications Mod
 
 ![thumbnail icon](media/thumbnail.png)
 
-# Why Optional?
-To prevent the user from being surprised by functionality, each change must be enabled in the "mods" menu.  Thus optional.
+# Modifications Overview
+Below is a list of functionality in mod.  By default, all functionality must be enabled in the Mods screen on the main menu.
 
-# Description
-A collection of various tweaks which are mostly QoL. Enable by checking the "Enable" box for each piece of functionality.  After saving the changes, restart the game.
+| Type | Name | Description |
+| :--- | :--- | :--- |
+| Balance | Ship Speed Boost | Increase the speed of ship travel. |
+| QoL | Implant Indicator | Changes the yellow "has augment" dot to green if the inspected creature has an implant|
+| QoL | Recycle Hotkey Quick Move | Hold R while hovering over items in the ship cargo to move that item to the recycler tab. |
+| QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
+| QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 
-# Tweaks Overview
-The mod has the following functionality:
+ 🧪 More items in the future...
 
-**Quality of Life** - Does not affect game balance
-
-* ⌨️ Mouse Quick Toss Rebind - Change the key bind for what the game calls "Fast Toss".  By default the game uses the Control key to move items between storage panes.
-* ⌨️ Split Stacks Hotkeys - Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
-* ⌨️ Recycle Hotkey Quick Move - Hold R while hovering over items in the ship cargo to move that item to the recycler tab.
-
-**Balance Change**
-* 🚀 Ship Speed Boost - Increase the speed of ship travel.
-
-More
-* 🧪 More items in the future...
-
-Each tweak can be configured in the Mods button on the main menu, under the "Red's Optional Tweaks" section.  
-For details on each tweak, see the related section below.
+For details on each modification, see the related section below.
 
 ## Maximum Compatibility
-Each tweak works like its own mini-mod. Disable one, and it's as if it was never there.  This is useful for working around bugs or handling conflicts with other mods.
+Each modification works like its own mini-mod. Disable one, and it's as if it was never there.  This is useful for working around bugs or handling conflicts with other mods.
 
 See the [Compatibility - Technical](#compatibility---technical) section for details.
 
-# Tweaks
+# Modifications
+## Ship Speed Boost
+Changes the ship's speed to decrease travel times.  By default this sets the ship to 2x the speed.
+
+## Implant Indicator
+When inspecting a creature during a raid, the yellow "has augment" indicator will be green if there is an implant installed.
+
 ## Mouse Quick Toss Rebind
 Allows the user to bind the "quick toss" key.  This is where the user can hold the ctrl key down while the mouse is over an item to move the item to the other inventory.
 By default it is remapped to middle mouse button (AKA Mouse2).
 
-## Ship Speed Boost
-Changes the ship's speed to decrease travel times.  By default this sets the ship to 2x the speed.
-
 ## Split Stacks Hotkeys
-When a stack of items is being split, the split dialog is shown.  This tweak adds the following:
+When a stack of items is being split, the split dialog is shown.  This modification adds the following:
 
 Adds increase and decrease hotkeys to change the value by one.  By default it is A and D. 
 
@@ -53,7 +47,7 @@ Hold R while hovering over items in the ship cargo to move that item to the recy
 # Compatibility - Technical
 For modders, here are the technical details.
 
-Each tweak contains their own patches and uses the enabled flag in the Harmony Prepare function to enable the tweak.  Non Harmony patches are gated by the same  enable flag.
+Each modification contains their own patches and uses the enabled flag in the Harmony Prepare function to enable the modification.  Non Harmony patches are gated by the same  enable flag.
 
 # Configuration
 The configuration can be changed with either the Mod Configuration Menu's "Mods" button on the main menu, or directly in the config file.  The "Mods" button is the preferred route.
@@ -78,6 +72,12 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 * Special thanks to Crynano for his excellent Mod Configuration Menu.
 * The TF2 RedSpy icon is from the reddit user [iwilding](https://www.reddit.com/user/iwilding/) from the post found [here](https://www.reddit.com/r/tf2/comments/2384j5/i_drew_a_red_spy/)
 * The Ship Speed Boost is based on Steam user [critic](https://steamcommunity.com/id/cybercritic)'s mod [Ship Speed Boost](https://steamcommunity.com/sharedfiles/filedetails/?id=3548633074).  The functionality is replicated with permission.
+* TF2 Font is from [fontriver](https://www.fontriver.com/font/tf2_build/)
 
-# 1.1.0 
+# Changes
+## 1.2.0 
+* Added implant indicator.
+* Added logging for patch exceptions.
+
+## 1.1.0 
 * Added "Move to Recycler" functionality

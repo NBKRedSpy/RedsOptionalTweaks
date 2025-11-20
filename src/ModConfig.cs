@@ -16,13 +16,6 @@ namespace RedsOptionalTweaks
     public class ModConfig : PersistentConfig<ModConfig>
     {
 
-        public ModConfig()
-        {
-            
-        }
-
-        public ModConfig(string configPath) : base(configPath) { }
-
         /// <summary>
         /// The Key to use to transfer items via mouse.  Game defaults to control key.
         /// </summary>
@@ -83,6 +76,48 @@ namespace RedsOptionalTweaks
         public bool EnableRecycleHotkey { get; set; }
 
         public KeyCode RecycleHotkey { get; set; } = KeyCode.R;
+
+
+        public bool EnableImplantIndicator { get; set; }
+
+        public string ImplantIndicatorColor { get; set; } = "#00FF00";  //green
+
+        [JsonIgnore]
+        private Color _implantIndicatorUnityColor;
+
+
+        /// <summary>
+        /// Translates the hex based color required by MCM to a Unity color.
+        /// </summary>
+        [JsonIgnore]
+        public Color ImplantIndicatorUnityColor
+        {
+            get { 
+                if(_implantIndicatorUnityColor == default)
+                {
+                    if (ColorUtility.TryParseHtmlString(ImplantIndicatorColor, out Color color))
+                    {
+                        _implantIndicatorUnityColor = color;
+                    }
+                    else
+                    {
+                        Plugin.Logger.Log($"Unable to parse color {ImplantIndicatorColor}");
+                    }
+                }
+
+                return _implantIndicatorUnityColor;
+            }
+        }
+
+
+        public ModConfig()
+        {
+
+        }
+
+        public ModConfig(string configPath) : base(configPath) { }
+
+
 
     }
 }

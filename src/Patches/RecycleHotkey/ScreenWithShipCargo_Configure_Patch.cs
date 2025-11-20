@@ -19,7 +19,14 @@ namespace RedsOptionalTweaks.Patches.RecycleHotkey
     {
         public static void Prefix(ArsenalScreen __instance)
         {
-            ShipCargoUpdateComponent.CreateComponent<ShipCargoUpdateComponent>(__instance);
+            try
+            {
+                ShipCargoUpdateComponent.CreateComponent<ShipCargoUpdateComponent>(__instance);
+            }
+            catch (Exception ex)
+            {
+                Plugin.Logger.LogError(ex, $"Error in ScreenWithShipCargo_Configure_Patch.Prefix");
+            }
         }
     }
 }

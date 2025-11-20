@@ -19,12 +19,27 @@ namespace RedsOptionalTweaks.Patches.SplitStackHotkeys
     {
         public static bool Prepare()
         {
-            return Plugin.Config.EnableSplitStacksKeys;
+            try
+            {
+                return Plugin.Config.EnableSplitStacksKeys;
+            }
+            catch (Exception ex)
+            {
+                Plugin.Logger.LogError(ex, $"Error in ContextMenuSplitStacksButton_Start_Patch.Prepare");
+                return false;
+            }
         }   
 
         public static void Postfix([NotNull] ContextMenuSplitStacksButton __instance)
         {
-            SplitSlideComponent.AddTo(__instance);
+            try
+            {
+                SplitSlideComponent.AddTo(__instance);
+            }
+            catch (Exception ex)
+            {
+                Plugin.Logger.LogError(ex, $"Error in ContextMenuSplitStacksButton_Start_Patch.Postfix");
+            }
         }   
     }
 }

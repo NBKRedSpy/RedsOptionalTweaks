@@ -40,12 +40,27 @@ namespace RedsOptionalTweaks.Mcm
 
                 new ConfigValue("__NoneNote", "Any hotkey can be disabled by setting the key to 'None'", "NOTE"),
 
+                #region Augment Indicator
+                CreateConfigProperty(nameof(ModConfig.EnableImplantIndicator), "Enableds recoloring the augment indicator on the " +
+                    "creature window if there is an implant.",
+                    header: "Augment Indicator"),
+
+                CreateConfigProperty(nameof(ModConfig.ImplantIndicatorColor), "The color to use for the implant indicator",
+                    header: "Augment Indicator"),
+
+                #endregion
+
+                #region Mouse Quick Toss Rebind
+
                 CreateConfigProperty(nameof(ModConfig.EnableMouseQuickTossKey), "Enables rebinding the mouse transfer key.",
                     header: "Mouse Quick Toss Rebind"),
 
                 CreateEnumDropdown<KeyCode>(nameof(ModConfig.MouseQuickTossKey),
                     "The key to use to transfer items via mouse. The game uses the control key.\n" + KeyCodeAlphaNote,
                     "Mouse Quick Toss Key", "Mouse Quick Toss Rebind", sort: true),
+
+                #endregion
+                #region Ship Speed Boost
 
                 CreateConfigProperty(nameof(ModConfig.EnableShipSpeedBoost),
                     "Enables a boost to ship speed.", header: "Ship Speed Boost"),
@@ -54,7 +69,9 @@ namespace RedsOptionalTweaks.Mcm
                     "The multiplier to increase ship speed by.  Default is 2.0x.",
                     "Ship Speed Increase Multiplier",
                     1.0f, 20.0f, "Ship Speed Boost"),
+                #endregion
 
+                #region Split Stacks Hotkeys
                 CreateConfigProperty(nameof(ModConfig.EnableSplitStacksKeys), "Enables the hotkey functionality for splitting stacks in the context menu.",
                     header: "Split Stacks Hotkeys"),
 
@@ -72,6 +89,9 @@ namespace RedsOptionalTweaks.Mcm
                     0.05f, 1.0f, SplitStacksHotkeyHeader),
                 .. CreateAmountPresets(config.AmountPresets),
 
+                #endregion
+
+                #region Recycle Hotkey
                 CreateConfigProperty(nameof(ModConfig.EnableRecycleHotkey),
                     "Enables a hotkey to recycle items from the inventory screen.  This allows the user to hold down the recycle key " +
                     "(defaults to R) to move items directly to the recycler in the inventory screen.",
@@ -80,9 +100,12 @@ namespace RedsOptionalTweaks.Mcm
                 CreateEnumDropdown<KeyCode>(nameof(ModConfig.RecycleHotkey),
                     "The key to use to recycle items from the inventory screen.",
                     "Recycle Hotkey", "Recycle Hotkey"),
+
+                #endregion
+
             ];
 
-            ModConfigMenuAPI.RegisterModConfig("Red's Misc Tweaks", configValues, OnSave);
+            ModConfigMenuAPI.RegisterModConfig("Red's Optional Tweaks", configValues, OnSave);
         }
 
         protected override bool OnSave(Dictionary<string, object> currentConfig, out string feedbackMessage)

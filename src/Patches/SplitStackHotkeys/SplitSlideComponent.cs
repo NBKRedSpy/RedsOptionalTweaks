@@ -22,17 +22,24 @@ namespace RedsOptionalTweaks.Patches.SplitStackHotkeys
 
         public override void Update()
         {
-            if (HandleArrowKeys()) return;
+            try
+            {
+                if (HandleArrowKeys()) return;
 
-            // Remaining logic only reacts to fresh key downs
-            if (!Input.anyKeyDown) return;
+                // Remaining logic only reacts to fresh key downs
+                if (!Input.anyKeyDown) return;
 
-            int amount = Plugin.Config.AmountPresets.FirstOrDefault(x => Input.GetKeyDown(x.Key)).Amount;
+                int amount = Plugin.Config.AmountPresets.FirstOrDefault(x => Input.GetKeyDown(x.Key)).Amount;
 
-            if (amount == 0) return;
+                if (amount == 0) return;
 
-            //Somewhat oddly, the right side is the side to keep in the current slot.
-            Component._slider.value = ((float)Component._item.StackCount - amount) / Component._item.StackCount;
+                //Somewhat oddly, the right side is the side to keep in the current slot.
+                Component._slider.value = ((float)Component._item.StackCount - amount) / Component._item.StackCount;
+            }
+            catch (Exception ex)
+            {
+                Plugin.Logger.LogError($"Exception in SplitSlideComponent.Update: {ex}");
+            }
         }
 
         /// <summary>

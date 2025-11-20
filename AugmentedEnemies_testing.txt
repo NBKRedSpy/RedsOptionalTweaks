@@ -1,0 +1,7 @@
+This is a list of enemy types used for testing the Augmented Enemies mod.  
+They have combinations of implants and augmentations.
+
+penal
+desperado
+siegemaster
+quest_GodBuilders_simeon
