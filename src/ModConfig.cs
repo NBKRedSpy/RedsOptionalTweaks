@@ -78,7 +78,7 @@ namespace RedsOptionalTweaks
         public KeyCode RecycleHotkey { get; set; } = KeyCode.R;
 
 
-        public bool EnableAugmentIndicator { get; set; }
+        public bool EnableImplantIndicator { get; set; }
 
         public string ImplantIndicatorColor { get; set; } = "#00FF00";  //green
 

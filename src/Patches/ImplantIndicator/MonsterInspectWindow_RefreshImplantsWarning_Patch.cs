@@ -10,38 +10,33 @@ using UnityEngine;
 
 namespace RedsOptionalTweaks.Patches.ImplantIndicator
 {
+
+
     /// <summary>
     /// Recolors the implant dot to green if there is at least one implant installed.
     /// Handles the coloring if the creature is alive.
     /// </summary>
-    internal static class MonsterInspectWindow_RefreshImplantsWarning_Patch
-    {
 
+    [HarmonyPatch(typeof(MonsterInspectWindow), nameof(MonsterInspectWindow.RefreshImplantsWarning))]
+    public static class MonsterInspectWindow_RefreshImplantsWarning_Patch
+    {
         private static Color DefaultColor { get; set; } = Color.black;
 
         public static bool Prepare()
         {
-            return Plugin.Config.EnableAugmentIndicator;
+            return Plugin.Config.EnableImplantIndicator;
         }
 
-        /// <summary>
-        /// Attaches the Recycling hotkey functionality to the Arsenal screen.
-        /// </summary>
-
-        [HarmonyPatch(typeof(MonsterInspectWindow), nameof(MonsterInspectWindow.RefreshImplantsWarning))]
-        public static class ScreenWithShipCargo_Configure_Patch
+        public static void Postfix(MonsterInspectWindow __instance)
         {
-            public static void Postfix(MonsterInspectWindow __instance)
+            bool hasImplants = AugmentationSystem.HasAnyInstalledImplants(__instance._inspectedCreature.CreatureData);
+
+            if (DefaultColor == Color.black)
             {
-                bool hasImplants = AugmentationSystem.HasAnyInstalledImplants(__instance._inspectedCreature.CreatureData);
-
-                if (DefaultColor == Color.black)
-                {
-                   DefaultColor = __instance._implantsWarning.color;
-                }
-
-                __instance._implantsWarning.color = hasImplants ? Plugin.Config.ImplantIndicatorUnityColor : DefaultColor;
+                DefaultColor = __instance._implantsWarning.color;
             }
+
+            __instance._implantsWarning.color = hasImplants ? Plugin.Config.ImplantIndicatorUnityColor : DefaultColor;
         }
     }
 }
