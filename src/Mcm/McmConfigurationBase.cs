@@ -78,7 +78,8 @@ namespace RedsOptionalTweaks.Mcm
         /// <param name="label"></param>
         /// <param name="header"></param>
         /// <returns></returns>
-        internal IConfigValue CreateEnumDropdown<TEnum>(string propertyName, string tooltip, string label, string header = "General", bool sort = false) 
+        internal IConfigValue CreateEnumDropdown<TEnum>(string propertyName, string tooltip, string label = "", 
+            string header = "General", bool sort = false) 
             where TEnum : Enum
         {
 
@@ -96,8 +97,10 @@ namespace RedsOptionalTweaks.Mcm
                 enumNames = Enum.GetNames(typeof(TEnum)).ToList<object>();
             }
 
+            string formattedLabel = label == "" ? FormatUpperCaseSpaces(propertyName) : label;
+
             var dropDown = new DropdownConfig(propertyName, propertyValue.ToString(), header, defaultValue.ToString(),
-                 tooltip, label, enumNames);
+                 tooltip, formattedLabel, enumNames);
 
             return dropDown;
         }

@@ -1,5 +1,6 @@
 [h1]Quasimorph Red's Optional Modifications Mod[/h1]
 
+[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/thumbnail.png[/img]
 
 [h1]Modifications Overview[/h1]
 
@@ -40,6 +41,14 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 [tr]
 [td]QoL
 [/td]
+[td]Stack Total Inventory Count
+[/td]
+[td]When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
 [td]Mouse Quick Toss Rebind
 [/td]
 [td]Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes.
@@ -73,6 +82,8 @@ Changes the ship's speed to decrease travel times.  By default this sets the shi
 
 [h2]Implant Indicator[/h2]
 
+[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ImplantIndicator.png[/img]
+
 When inspecting a creature during a raid, the yellow "has augment" indicator will be green if there is an implant installed.
 
 [h2]Mouse Quick Toss Rebind[/h2]
@@ -92,6 +103,20 @@ By default, 1 is set to 10, and 2 is set to 5.
 [h2]Recycle Hotkey Quick Move[/h2]
 
 Hold R while hovering over items in the ship cargo to move that item to the recycler tab.  Avoids needing to move each item to the recycler with drag and drop.
+
+[h2]Stack Total Inventory Count[/h2]
+
+Normal Count:
+[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ShowTotalAmountBefore.png[/img]
+
+Showing the total amount owned of an item.
+[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ShowTotalAmountAfter.png[/img]
+
+When in a raid, holding alt will change item stack's count to the total amount of that item that is owned.  This is the same total number in items' tooltip.
+
+This allows the user to quickly determine if they want to pickup item X or item Y depending on how much of each they already have back in the ship.
+
+This number is identical to what is shown on the tooltip, so items that are dropped off in the shuttle or drop pod are not included in the count.
 
 [h1]Compatibility - Technical[/h1]
 

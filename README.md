@@ -10,6 +10,7 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 | Balance | Ship Speed Boost | Increase the speed of ship travel. |
 | QoL | Implant Indicator | Changes the yellow "has augment" dot to green if the inspected creature has an implant|
 | QoL | Recycle Hotkey Quick Move | Hold R while hovering over items in the ship cargo to move that item to the recycler tab. |
+| QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 
@@ -27,6 +28,8 @@ See the [Compatibility - Technical](#compatibility---technical) section for deta
 Changes the ship's speed to decrease travel times.  By default this sets the ship to 2x the speed.
 
 ## Implant Indicator
+![Implant Indicator](./media/ImplantIndicator.png)
+
 When inspecting a creature during a raid, the yellow "has augment" indicator will be green if there is an implant installed.
 
 ## Mouse Quick Toss Rebind
@@ -43,6 +46,20 @@ By default, 1 is set to 10, and 2 is set to 5.
 
 ## Recycle Hotkey Quick Move
 Hold R while hovering over items in the ship cargo to move that item to the recycler tab.  Avoids needing to move each item to the recycler with drag and drop.
+
+## Stack Total Inventory Count
+
+Normal Count:  
+![Normal count](./media/ShowTotalAmountBefore.png)
+
+Showing the total amount owned of an item.  
+![Total count when holding the alt key](./media/ShowTotalAmountAfter.png)
+
+When in a raid, holding alt will change item stack's count to the total amount of that item that is owned.  This is the same total number in items' tooltip.
+
+This allows the user to quickly determine if they want to pickup item X or item Y depending on how much of each they already have back in the ship.  
+
+This number is identical to what is shown on the tooltip, so items that are dropped off in the shuttle or drop pod are not included in the count.
 
 # Compatibility - Technical
 For modders, here are the technical details.
