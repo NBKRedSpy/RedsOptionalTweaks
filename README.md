@@ -48,15 +48,13 @@ By default, 1 is set to 10, and 2 is set to 5.
 Hold R while hovering over items in the ship cargo to move that item to the recycler tab.  Avoids needing to move each item to the recycler with drag and drop.
 
 ## Stack Total Inventory Count
+When in a screen that shows item stacks, holding alt will show the total amount of each item type that are owned.  This is the same count as found in the tooltip when hovering an item.
 
-Normal Count:  
+**Normal count showing how many items are in the stack:**  
 ![Normal count](./media/ShowTotalAmountBefore.png)
 
-Showing the total amount owned of an item.  
-![Total count when holding the alt key](./media/ShowTotalAmountAfter.png)
-
-When in a raid, holding alt will change item stack's count to the total amount of that item that is owned.  This is the same total number in items' tooltip.
-
+**Holding alt shows the amount currently owned.**  
+![Total count when holding the alt key](./media/ShowTotalAmountAfter.png)  
 This allows the user to quickly determine if they want to pickup item X or item Y depending on how much of each they already have back in the ship.  
 
 This number is identical to what is shown on the tooltip, so items that are dropped off in the shuttle or drop pod are not included in the count.

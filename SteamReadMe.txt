@@ -106,14 +106,13 @@ Hold R while hovering over items in the ship cargo to move that item to the recy
 
 [h2]Stack Total Inventory Count[/h2]
 
-Normal Count:
+When in a screen that shows item stacks, holding alt will show the total amount of each item type that are owned.  This is the same count as found in the tooltip when hovering an item.
+
+[b]Normal count showing how many items are in the stack:[/b]
 [img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ShowTotalAmountBefore.png[/img]
 
-Showing the total amount owned of an item.
+[b]Holding alt shows the amount currently owned.[/b]
 [img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ShowTotalAmountAfter.png[/img]
-
-When in a raid, holding alt will change item stack's count to the total amount of that item that is owned.  This is the same total number in items' tooltip.
-
 This allows the user to quickly determine if they want to pickup item X or item Y depending on how much of each they already have back in the ship.
 
 This number is identical to what is shown on the tooltip, so items that are dropped off in the shuttle or drop pod are not included in the count.
