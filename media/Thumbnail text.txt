@@ -1,0 +1,5 @@
+Configurable ship speed
+Implant indicator
+Move to recycler hotkey
+Show item stack total count
+More...

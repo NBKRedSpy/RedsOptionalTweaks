@@ -77,6 +77,12 @@ namespace RedsOptionalTweaks
 
         public KeyCode RecycleHotkey { get; set; } = KeyCode.R;
 
+        /// <summary>
+        /// Enables the ability to see total stacks in inventory stacks.
+        /// </summary>
+        public bool EnableStackTotalInventoryCount { get; set; }
+
+        public KeyCode StackTotalInventoryCountKey { get; set; } = KeyCode.LeftAlt;
 
         public bool EnableImplantIndicator { get; set; }
 

@@ -71,6 +71,20 @@ namespace RedsOptionalTweaks.Mcm
                     1.0f, 20.0f, "Ship Speed Boost"),
                 #endregion
 
+                #region Stack Total Inventory Count
+                CreateConfigProperty(nameof(ModConfig.EnableStackTotalInventoryCount),
+                    """
+                    When holding the alt key, the count on stacks will show the total amount of that item owned. 
+                    This is identical to the number that is shown in the item's tooltip
+                    """,
+                    header: "Stack Total Inventory Count"),
+
+                CreateEnumDropdown<KeyCode>(nameof(ModConfig.StackTotalInventoryCountKey),
+                    "The key to hold to show the total inventory count on stacks.  Default is Left Alt.\n" + KeyCodeAlphaNote,
+                    header: "Stack Total Inventory Count", sort: true),
+
+                #endregion
+
                 #region Split Stacks Hotkeys
                 CreateConfigProperty(nameof(ModConfig.EnableSplitStacksKeys), "Enables the hotkey functionality for splitting stacks in the context menu.",
                     header: "Split Stacks Hotkeys"),

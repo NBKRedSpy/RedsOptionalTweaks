@@ -36,6 +36,9 @@
 			<HintPath>$(ManagedPath)Assembly-CSharp.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+		  <HintPath>$(ManagedPath)Unity.TextMeshPro.dll</HintPath>
+		</Reference>
 		<Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
 			<SpecificVersion>False</SpecificVersion>
 			<HintPath>$(ManagedPath)UnityEngine.dll</HintPath>
