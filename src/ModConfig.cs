@@ -79,9 +79,14 @@ namespace RedsOptionalTweaks
 
         public KeyCode RecycleHotkey { get; set; } = KeyCode.R;
 
-        #region
+        #endregion
 
         #region Stack Total Inventory Count
+
+
+        //TODO:  I should just change these into objects at some point and clean this up.
+        //  Will need to update the MCM code to handle that.
+        //  It's ugly, but works.
 
         /// <summary>
         /// Enables the ability to see total stacks in inventory stacks.
@@ -89,6 +94,13 @@ namespace RedsOptionalTweaks
         public bool EnableStackTotalInventoryCount { get; set; }
 
         public KeyCode StackTotalInventoryCountKey { get; set; } = KeyCode.LeftAlt;
+
+        public string StackTotalInventoryLowCountColor { get; set; } = "#00FF00";  //green
+
+        /// <summary>
+        /// The threshold for coloring the count to indicate there is a low amount of that resource.
+        /// </summary>
+        public int StackTotalInventoryLowCountThreshold { get; set; } = 20;    
 
         #endregion
 
@@ -135,8 +147,6 @@ namespace RedsOptionalTweaks
         }
 
         public ModConfig(string configPath) : base(configPath) { }
-
-
 
     }
 }

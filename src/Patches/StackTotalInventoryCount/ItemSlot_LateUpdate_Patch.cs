@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using AsmResolver.DotNet.Code.Cil;
+using HarmonyLib;
 using MGSC;
 using System;
 using UnityEngine;
@@ -30,7 +31,7 @@ namespace RedsOptionalTweaks.Patches.StackTotalInventoryCount
                 KeyCode key = Plugin.Config.StackTotalInventoryCountKey;
 
                 //Restore original count using the game's logic.
-                //COPY WARNING: ItemSlot.Initialize method code.  This if LeftAlt is identical to the code at the end of the method.
+                //COPY WARNING: ItemSlot.Initialize method code.  This "if LeftAlt" is identical to the code at the end of the method.
                 if (Input.GetKeyUp(key))
                 {
                     if (__instance.Item.Is<WeaponRecord>())
@@ -47,9 +48,16 @@ namespace RedsOptionalTweaks.Patches.StackTotalInventoryCount
                 {
                     State state = Bootstrap._state;
                     int count = ItemInteractionSystem.Count(state.Get<Mercenaries>(), state.Get<MagnumCargo>(), __instance.Item.Id);
-                    __instance._count.text = count.ToString();
 
-                    Localization.ActualizeFontAndSize(__instance._count, TextContext.SmallNumbers);
+
+                    int threshold = Plugin.Config.StackTotalInventoryLowCountThreshold;
+
+                    __instance._count.richText = true;
+                    __instance._count.SetText(threshold != 0 && count <= threshold ?
+                        $"<color={Plugin.Config.StackTotalInventoryLowCountColor}>{count}</color>" :
+                        count.ToString());
+
+                    //Localization.ActualizeFontAndSize(__instance._count, TextContext.SmallNumbers);
                 }
             }
 
