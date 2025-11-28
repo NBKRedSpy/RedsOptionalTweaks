@@ -73,9 +73,15 @@ namespace RedsOptionalTweaks
 
         #endregion
 
+
+        #region Recycle Hotkey
         public bool EnableRecycleHotkey { get; set; }
 
         public KeyCode RecycleHotkey { get; set; } = KeyCode.R;
+
+        #region
+
+        #region Stack Total Inventory Count
 
         /// <summary>
         /// Enables the ability to see total stacks in inventory stacks.
@@ -84,12 +90,17 @@ namespace RedsOptionalTweaks
 
         public KeyCode StackTotalInventoryCountKey { get; set; } = KeyCode.LeftAlt;
 
+        #endregion
+
+        #region Implant Indicator
+
         public bool EnableImplantIndicator { get; set; }
 
         public string ImplantIndicatorColor { get; set; } = "#00FF00";  //green
 
         [JsonIgnore]
         private Color _implantIndicatorUnityColor;
+
 
 
         /// <summary>
@@ -114,6 +125,8 @@ namespace RedsOptionalTweaks
                 return _implantIndicatorUnityColor;
             }
         }
+
+        #endregion
 
 
         public ModConfig()
