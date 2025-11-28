@@ -56,6 +56,7 @@ When in a screen that shows item stacks, holding alt will show the total amount 
 **Holding alt shows the amount currently owned.**  
 ![Total count when holding the alt key](./media/ShowTotalAmountAfter.png)  
 This allows the user to quickly determine if they want to pickup item X or item Y depending on how much of each they already have back in the ship.  
+The green color indicates that the user owns 20 or less of that item.  The value can be completely turned off by setting the threshold value to zero.
 
 This number is identical to what is shown on the tooltip, so items that are dropped off in the shuttle or drop pod are not included in the count.
 

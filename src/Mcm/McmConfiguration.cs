@@ -84,6 +84,7 @@ namespace RedsOptionalTweaks.Mcm
 
                 CreateConfigProperty(nameof(ModConfig.StackTotalInventoryLowCountColor),
                     "The color to use when the total amount owned for an item is below the configured threshold",
+                    "Low Count Color",
                     header: "Stack Total Inventory Count"),
 
                 CreateConfigProperty(nameof(ModConfig.StackTotalInventoryLowCountThreshold),
