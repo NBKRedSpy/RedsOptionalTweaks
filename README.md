@@ -91,6 +91,9 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 * TF2 Font is from [fontriver](https://www.fontriver.com/font/tf2_build/)
 
 # Changes
+## 1.4.0
+* Stack Total Inventory Count - Added coloring of items that have a low inventory count.
+
 ## 1.3.0 
 * Added Stack Total Inventory Count functionality.
 
