@@ -56,6 +56,7 @@ When in a screen that shows item stacks, holding alt will show the total amount 
 **Holding alt shows the amount currently owned.**  
 ![Total count when holding the alt key](./media/ShowTotalAmountAfter.png)  
 This allows the user to quickly determine if they want to pickup item X or item Y depending on how much of each they already have back in the ship.  
+The green color indicates that the user owns 20 or less of that item.  The value can be completely turned off by setting the threshold value to zero.
 
 This number is identical to what is shown on the tooltip, so items that are dropped off in the shuttle or drop pod are not included in the count.
 
@@ -90,6 +91,10 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 * TF2 Font is from [fontriver](https://www.fontriver.com/font/tf2_build/)
 
 # Changes
+## 1.4.0
+* Stack Total Inventory Count - Added coloring of items that have a low inventory count.
+* Fix for slider hotkeys not working.
+
 ## 1.3.0 
 * Added Stack Total Inventory Count functionality.
 

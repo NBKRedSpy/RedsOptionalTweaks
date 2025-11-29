@@ -7,6 +7,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace RedsOptionalTweaks.Patches.SplitStackHotkeys
 {
@@ -57,13 +58,13 @@ namespace RedsOptionalTweaks.Patches.SplitStackHotkeys
             // Immediate press handling for arrows
             if (Input.GetKeyDown(minusKey))
             {
-                StepLeft();
+                ChangeAmount(false);
                 _leftRepeatTimer = Plugin.Config.RepeatDelaySeconds;
                 handled = true;
             }
             if (Input.GetKeyDown(plusKey))
             {
-                StepRight();
+                ChangeAmount(true);
                 _rightRepeatTimer = Plugin.Config.RepeatDelaySeconds;
                 handled = true;
             }
@@ -76,7 +77,7 @@ namespace RedsOptionalTweaks.Patches.SplitStackHotkeys
                     _leftRepeatTimer -= Time.unscaledDeltaTime;
                     if (_leftRepeatTimer <= 0f)
                     {
-                        StepLeft();
+                        ChangeAmount(false);
                         _leftRepeatTimer = Plugin.Config.RepeatDelaySeconds;
                         handled = true;
                     }
@@ -94,7 +95,7 @@ namespace RedsOptionalTweaks.Patches.SplitStackHotkeys
                     _rightRepeatTimer -= Time.unscaledDeltaTime;
                     if (_rightRepeatTimer <= 0f)
                     {
-                        StepRight();
+                        ChangeAmount(true);
                         _rightRepeatTimer = Plugin.Config.RepeatDelaySeconds;
                         handled = true;
                     }
@@ -108,15 +109,29 @@ namespace RedsOptionalTweaks.Patches.SplitStackHotkeys
             return handled;
         }
 
-        private void StepLeft()
-        {
-            Component._slider.value -= Component._sliderWrapper.IsInteractable ? Component._sliderWrapper._sliderStep : 0f;
-        }
 
-        private void StepRight()
+        /// <summary>
+        /// Changes the slider amount by one step.
+        /// </summary>
+        /// <param name="increase">If true, increases the amount.  Otherwise decreases</param>
+        private void ChangeAmount(bool increase)
         {
-            Component._slider.value += Component._sliderWrapper.IsInteractable ? Component._sliderWrapper._sliderStep : 0f;
-        }
+            SliderWrapper sliderWrapper = Component._sliderWrapper;
+
+            //COPY WARNING: MGSC.SliderWrapper.ProcessInput() This is *similar* to the logic used in that method. (more below)
+            //  Current location: area: Line 107 -> "if (axis.x < 0f)"
+
+            //Slightly different as this code uses the _slider's current value instead.
+            //  I'm not entirely sure why the game does it this way, but I think the area is for 
+            //  joystick/controller input.
+
+            sliderWrapper._currentValue = Mathf.Clamp(
+                Component._slider.value + (increase ? sliderWrapper._sliderStep : -sliderWrapper._sliderStep), 
+                sliderWrapper._slider.minValue, sliderWrapper._slider.maxValue);
+            Component._slider.value = sliderWrapper._currentValue;
+
+            SingletonMonoBehaviour<SoundController>.Instance.PlayUiSound(SingletonMonoBehaviour<SoundsStorage>.Instance.ButtonClick);
+        }   
 
         public static SplitSlideComponent AddTo(ContextMenuSplitStacksButton target)
         {

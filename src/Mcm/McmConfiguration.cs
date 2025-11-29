@@ -67,8 +67,7 @@ namespace RedsOptionalTweaks.Mcm
 
                 CreateConfigProperty(nameof(ModConfig.ShipSpeedIncrease),
                     "The multiplier to increase ship speed by.  Default is 2.0x.",
-                    "Ship Speed Increase Multiplier",
-                    1.0f, 20.0f, "Ship Speed Boost"),
+                    1.0f, 20.0f, "Ship Speed Increase Multiplier", "Ship Speed Boost"),
                 #endregion
 
                 #region Stack Total Inventory Count
@@ -82,6 +81,18 @@ namespace RedsOptionalTweaks.Mcm
                 CreateEnumDropdown<KeyCode>(nameof(ModConfig.StackTotalInventoryCountKey),
                     "The key to hold to show the total inventory count on stacks.  Default is Left Alt.\n" + KeyCodeAlphaNote,
                     header: "Stack Total Inventory Count", sort: true),
+
+                CreateConfigProperty(nameof(ModConfig.StackTotalInventoryLowCountColor),
+                    "The color to use when the total amount owned for an item is below the configured threshold",
+                    "Low Count Color",
+                    header: "Stack Total Inventory Count"),
+
+                CreateConfigProperty(nameof(ModConfig.StackTotalInventoryLowCountThreshold),
+                    """
+                    The threshold below which the total inventory count color will change to the low count color.
+                    Set to zero to not change the color.
+                    """,
+                    0, 1000, "Low Count Threshold", "Stack Total Inventory Count"),
 
                 #endregion
 
@@ -99,8 +110,7 @@ namespace RedsOptionalTweaks.Mcm
 
                 CreateConfigProperty(nameof(ModConfig.RepeatDelaySeconds),
                     "How many seconds to wait before repeating when holding the increase/decrease keys.",
-                    "Split Amount Repeat Delay (seconds)",
-                    0.05f, 1.0f, SplitStacksHotkeyHeader),
+                    0.05f, 1.0f, "Split Amount Repeat Delay (seconds)", SplitStacksHotkeyHeader),
                 .. CreateAmountPresets(config.AmountPresets),
 
                 #endregion

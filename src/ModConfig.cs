@@ -73,9 +73,20 @@ namespace RedsOptionalTweaks
 
         #endregion
 
+
+        #region Recycle Hotkey
         public bool EnableRecycleHotkey { get; set; }
 
         public KeyCode RecycleHotkey { get; set; } = KeyCode.R;
+
+        #endregion
+
+        #region Stack Total Inventory Count
+
+
+        //TODO:  I should just change these into objects at some point and clean this up.
+        //  Will need to update the MCM code to handle that.
+        //  It's ugly, but works.
 
         /// <summary>
         /// Enables the ability to see total stacks in inventory stacks.
@@ -84,12 +95,24 @@ namespace RedsOptionalTweaks
 
         public KeyCode StackTotalInventoryCountKey { get; set; } = KeyCode.LeftAlt;
 
+        public string StackTotalInventoryLowCountColor { get; set; } = "#00FF00";  //green
+
+        /// <summary>
+        /// The threshold for coloring the count to indicate there is a low amount of that resource.
+        /// </summary>
+        public int StackTotalInventoryLowCountThreshold { get; set; } = 20;    
+
+        #endregion
+
+        #region Implant Indicator
+
         public bool EnableImplantIndicator { get; set; }
 
         public string ImplantIndicatorColor { get; set; } = "#00FF00";  //green
 
         [JsonIgnore]
         private Color _implantIndicatorUnityColor;
+
 
 
         /// <summary>
@@ -115,6 +138,8 @@ namespace RedsOptionalTweaks
             }
         }
 
+        #endregion
+
 
         public ModConfig()
         {
@@ -122,8 +147,6 @@ namespace RedsOptionalTweaks
         }
 
         public ModConfig(string configPath) : base(configPath) { }
-
-
 
     }
 }

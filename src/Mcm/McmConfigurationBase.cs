@@ -172,10 +172,12 @@ namespace RedsOptionalTweaks.Mcm
         }
 
         protected ConfigValue CreateConfigProperty<T>(string propertyName,
-            string tooltip, string label, T min, T max, string header = "General") where T : struct
+            string tooltip, T min, T max, string label = "", string header = "General") where T : struct
         {
             T defaultValue = (T)AccessTools.Property(typeof(ModConfig), propertyName).GetValue(Defaults);
             T propertyValue = (T)AccessTools.Property(typeof(ModConfig), propertyName).GetValue(Config);
+
+            string formattedLabel = label == "" ? FormatUpperCaseSpaces(propertyName) : label;
 
             switch (typeof(T))
             {
