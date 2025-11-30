@@ -1,5 +1,6 @@
 [h1]Quasimorph Red's Optional Modifications Mod[/h1]
 
+[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/thumbnail.png[/img]
 
 [h1]Modifications Overview[/h1]
 
@@ -81,6 +82,7 @@ Changes the ship's speed to decrease travel times.  By default this sets the shi
 
 [h2]Implant Indicator[/h2]
 
+[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ImplantIndicator.png[/img]
 
 When inspecting a creature during a raid, the yellow "has augment" indicator will be green if there is an implant installed.
 
@@ -107,11 +109,13 @@ Hold R while hovering over items in the ship cargo to move that item to the recy
 When in a screen that shows item stacks, holding alt will show the total amount of each item type that are owned.  This is the same count as found in the tooltip when hovering an item.
 
 [b]Normal count showing how many items are in the stack:[/b]
+[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ShowTotalAmountBefore.png[/img]
 
 [b]Holding alt shows the amount currently owned.[/b]
-
+[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ShowTotalAmountAfter.png[/img]
 This allows the user to quickly determine if they want to pickup item X or item Y depending on how much of each they already have back in the ship.
 The green color indicates that the user owns 20 or less of that item.  The value can be completely turned off by setting the threshold value to zero.
+
 This number is identical to what is shown on the tooltip, so items that are dropped off in the shuttle or drop pod are not included in the count.
 
 [h1]Compatibility - Technical[/h1]
