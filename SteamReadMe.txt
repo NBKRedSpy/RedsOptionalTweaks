@@ -49,6 +49,14 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 [tr]
 [td]QoL
 [/td]
+[td]Hold Reload
+[/td]
+[td]Can hold the reload key to keep reloading when waiting and moving.  Use for single load weapons
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
 [td]Mouse Quick Toss Rebind
 [/td]
 [td]Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes.
@@ -90,6 +98,31 @@ When inspecting a creature during a raid, the yellow "has augment" indicator wil
 
 Allows the user to bind the "quick toss" key.  This is where the user can hold the ctrl key down while the mouse is over an item to move the item to the other inventory.
 By default it is remapped to middle mouse button (AKA Mouse2).
+
+[h2]Hold Reload[/h2]
+
+When moving or waiting a turn, holding the Reload key will continue to reload.  For example, if a shotgun requires a reload, the user can hold the Reload key while moving. For each step, a reload will occur as long as the user is still holding the Reload key.
+
+If you are looking for an automated version of the reload, check out Traveler's "Walk and Auto Reload" mod found [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3601126533]here[/url]
+
+The purpose of my modification is to mirror the base game's requirement to remember to reload, but remove the need to spam the Reload key. I think that forgetting to reload makes some memorable situations.
+
+[h3]Reloads Before Next Turn[/h3]
+
+[b]Important:[/b] There's a quirk in how the reload display works that might seem weird at first, but it's actually working as intended.
+
+Here's what happens:
+[list]
+[*]You hold down Reload for the first time and the weapon shows it is reloading
+[*]You finish your current action (like moving)
+[*]When the next action starts, the reload indicator [i]disappears[/i] - this looks broken but it's not!
+[*]Keep holding Reload and end your turn again
+[*]Right before your next action starts, the reload will actually happen (you'll see the reload indicator and hear a click)
+[/list]
+
+[b]Why does it work this way?[/b]
+
+The mod is designed to protect you from getting caught with your pants down. If the reload happened right at the start of your next action, you'd be stuck reloading even if an enemy suddenly appears. This way, you can react immediately and take a shot instead of being locked into a reload when you need to defend yourself.
 
 [h2]Split Stacks Hotkeys[/h2]
 
@@ -156,6 +189,11 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 [/list]
 
 [h1]Changes[/h1]
+
+[h2]1.5.0[/h2]
+[list]
+[*]Added "Hold to Reload" functionality.
+[/list]
 
 [h2]1.4.0[/h2]
 [list]

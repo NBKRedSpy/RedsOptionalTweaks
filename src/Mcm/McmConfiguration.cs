@@ -50,6 +50,11 @@ namespace RedsOptionalTweaks.Mcm
 
                 #endregion
 
+                #region Hold to Reload
+                CreateConfigProperty(nameof(ModConfig.EnableHoldToReload),
+                    "Enables holding the reload key to continuously reload weapons.",
+                    header: "Hold to Reload"),
+                #endregion
                 #region Mouse Quick Toss Rebind
 
                 CreateConfigProperty(nameof(ModConfig.EnableMouseQuickTossKey), "Enables rebinding the mouse transfer key.",

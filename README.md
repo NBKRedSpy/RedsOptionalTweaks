@@ -11,6 +11,7 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 | QoL | Implant Indicator | Changes the yellow "has augment" dot to green if the inspected creature has an implant|
 | QoL | Recycle Hotkey Quick Move | Hold R while hovering over items in the ship cargo to move that item to the recycler tab. |
 | QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
+| QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Use for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 
@@ -36,6 +37,28 @@ When inspecting a creature during a raid, the yellow "has augment" indicator wil
 Allows the user to bind the "quick toss" key.  This is where the user can hold the ctrl key down while the mouse is over an item to move the item to the other inventory.
 By default it is remapped to middle mouse button (AKA Mouse2).
 
+
+## Hold Reload
+When moving or waiting a turn, holding the Reload key will continue to reload.  For example, if a shotgun requires a reload, the user can hold the Reload key while moving. For each step, a reload will occur as long as the user is still holding the Reload key.
+
+If you are looking for an automated version of the reload, check out Traveler's "Walk and Auto Reload" mod found [here](https://steamcommunity.com/sharedfiles/filedetails/?id=3601126533)
+
+The purpose of my modification is to mirror the base game's requirement to remember to reload, but remove the need to spam the Reload key. I think that forgetting to reload makes some memorable situations. 
+
+### Reloads Before Next Turn
+**Important:** There's a quirk in how the reload display works that might seem weird at first, but it's actually working as intended.
+
+Here's what happens:
+* You hold down Reload for the first time and the weapon shows it is reloading
+* You finish your current action (like moving)
+* When the next action starts, the reload indicator *disappears* - this looks broken but it's not!
+* Keep holding Reload and end your turn again
+* Right before your next action starts, the reload will actually happen (you'll see the reload indicator and hear a click)
+
+**Why does it work this way?**
+
+The mod is designed to protect you from getting caught with your pants down. If the reload happened right at the start of your next action, you'd be stuck reloading even if an enemy suddenly appears. This way, you can react immediately and take a shot instead of being locked into a reload when you need to defend yourself.
+ 
 ## Split Stacks Hotkeys
 When a stack of items is being split, the split dialog is shown.  This modification adds the following:
 
@@ -91,6 +114,9 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 * TF2 Font is from [fontriver](https://www.fontriver.com/font/tf2_build/)
 
 # Changes
+## 1.5.0
+* Added "Hold to Reload" functionality.
+
 ## 1.4.0
 * Stack Total Inventory Count - Added coloring of items that have a low inventory count.
 * Fix for slider hotkeys not working.

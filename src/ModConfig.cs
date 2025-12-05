@@ -35,6 +35,13 @@ namespace RedsOptionalTweaks
         public float ShipSpeedIncrease { get; set; } = 2.0f;
         #endregion
 
+        #region Hold To Reload
+        /// <summary>
+        /// Enables the ability to hold the reload key to continiously reload weapons while it is held.
+        /// </summary>
+        public bool EnableHoldToReload { get; set; } = false;
+        #endregion
+
         #region Context Menu Split Stack Settings
 
         /// <summary>

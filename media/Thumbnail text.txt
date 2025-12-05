@@ -1,5 +1,10 @@
-Configurable ship speed
-Implant indicator
-Move to recycler hotkey
-Show item stack total count
-More...
+🌟New for 1.5.0!
+  Hold to Reload
+
+🚀 Configurable ship speed
+🤖 Implant indicator
+🔫 Hold to Reload
+♻️ Move to Recycler hotkey
+🧮 Show item stack 
+    total count
+❗ More...

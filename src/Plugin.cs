@@ -17,6 +17,8 @@ namespace RedsOptionalTweaks
 {
     public static class Plugin
     {
+        public const string ReloadCommandKey = "ReloadWeapon";
+
 
         public static ConfigDirectories ConfigDirectories = new ConfigDirectories();
 

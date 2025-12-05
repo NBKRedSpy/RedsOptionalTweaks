@@ -256,9 +256,6 @@ namespace RedsOptionalTweaks.Mcm
             }
             else
             {
-                //todo: I don't think this is required
-                ////Change type if needed
-                //object convertedValue = Convert.ChangeType(value, propertyType);
                 setMethod(value);
             }   
 
