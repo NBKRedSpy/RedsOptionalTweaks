@@ -51,7 +51,7 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 [/td]
 [td]Hold Reload
 [/td]
-[td]Can hold the reload key to keep reloading when waiting and moving.  Use for single load weapons
+[td]Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons
 [/td]
 [/tr]
 [tr]

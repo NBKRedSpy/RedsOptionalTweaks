@@ -11,7 +11,7 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 | QoL | Implant Indicator | Changes the yellow "has augment" dot to green if the inspected creature has an implant|
 | QoL | Recycle Hotkey Quick Move | Hold R while hovering over items in the ship cargo to move that item to the recycler tab. |
 | QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
-| QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Use for single load weapons|
+| QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 
