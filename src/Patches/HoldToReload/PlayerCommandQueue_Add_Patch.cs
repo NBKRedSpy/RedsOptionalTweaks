@@ -21,7 +21,9 @@ namespace RedsOptionalTweaks.Patches.HoldToReload
         public static bool Prepare(ICommand command)
         {
 
-            return Plugin.Config.EnableHoldToReload;
+            return Plugin.DisableManager.IsFeatureEnabled(
+                nameof(ModConfig.EnableHoldToReload),
+                Plugin.Config.EnableHoldToReload);
         }
 
         public static void Postfix(PlayerCommandQueue __instance, ICommand cmd)

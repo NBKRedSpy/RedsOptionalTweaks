@@ -72,6 +72,12 @@
 		<PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" ExcludeAssets="runtime" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<None Include="FeatureDisable.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
 	<!--Clean out the Steam Workshop folder to prevent artifacts such as references no longer used-->
 	<Target BeforeTargets="PostBuildEvent" Condition="'$(SteamId)'!=''" Name="WorkshopFolderClean">
 		<ItemGroup>

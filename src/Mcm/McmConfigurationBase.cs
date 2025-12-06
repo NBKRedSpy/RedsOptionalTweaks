@@ -226,6 +226,16 @@ namespace RedsOptionalTweaks.Mcm
             Action<object> setMethod = null;   //The action to set the property or field's value.
 
 
+            //HACK: Temporary hack to fix colors.
+            if(value is string)
+            {
+                if(key.EndsWith("Color"))
+                {
+                    //Remove the quotes that the MCM adds.
+                    value = ((string)value).Trim('"');
+                }
+            }
+
             Type propertyType = null;
 
             //Try property

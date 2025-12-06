@@ -1,0 +1,9 @@
+{
+  "EnableMouseQuickTossKey": true,
+  "EnableShipSpeedBoost": true,
+  "EnableHoldToReload": true,
+  "EnableSplitStacksKeys": true,
+  "EnableRecycleHotkey": true,
+  "EnableStackTotalInventoryCount": true,
+  "EnableImplantIndicator": true
+}

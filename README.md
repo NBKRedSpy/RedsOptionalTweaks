@@ -114,6 +114,11 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 * TF2 Font is from [fontriver](https://www.fontriver.com/font/tf2_build/)
 
 # Changes
+## 1.5.2
+* Fix for colors not being saved correctly when the user changed the colors.  Users must set the colors again in the config screen.
+    * Thanks to Discord user Agalyon for reporting this issue.
+* Internal: Added ability to quickly disable specific functionality.  This if for maintenance when the game breaks mod compatibility.  The mod can continue running by temporarily disabling affected functionality.
+
 ## 1.5.0
 * Added "Hold to Reload" functionality.
 

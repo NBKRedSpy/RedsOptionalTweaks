@@ -121,7 +121,6 @@ namespace RedsOptionalTweaks
         private Color _implantIndicatorUnityColor;
 
 
-
         /// <summary>
         /// Translates the hex based color required by MCM to a Unity color.
         /// </summary>

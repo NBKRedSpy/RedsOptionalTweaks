@@ -13,7 +13,9 @@ namespace RedsOptionalTweaks.Patches.StackTotalInventoryCount
         {
             try
             {
-                return Plugin.Config.EnableStackTotalInventoryCount;
+                return Plugin.DisableManager.IsFeatureEnabled(
+                    nameof(ModConfig.EnableStackTotalInventoryCount),
+                    Plugin.Config.EnableStackTotalInventoryCount);
             }
             catch (Exception ex)
             {
