@@ -112,26 +112,3 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 * The TF2 RedSpy icon is from the reddit user [iwilding](https://www.reddit.com/user/iwilding/) from the post found [here](https://www.reddit.com/r/tf2/comments/2384j5/i_drew_a_red_spy/)
 * The Ship Speed Boost is based on Steam user [critic](https://steamcommunity.com/id/cybercritic)'s mod [Ship Speed Boost](https://steamcommunity.com/sharedfiles/filedetails/?id=3548633074).  The functionality is replicated with permission.
 * TF2 Font is from [fontriver](https://www.fontriver.com/font/tf2_build/)
-
-# Changes
-## 1.5.2
-* Fix for colors not being saved correctly when the user changed the colors.  Users must set the colors again in the config screen.
-    * Thanks to Discord user Agalyon for reporting this issue.
-* Internal: Added ability to quickly disable specific functionality.  This if for maintenance when the game breaks mod compatibility.  The mod can continue running by temporarily disabling affected functionality.
-
-## 1.5.0
-* Added "Hold to Reload" functionality.
-
-## 1.4.0
-* Stack Total Inventory Count - Added coloring of items that have a low inventory count.
-* Fix for slider hotkeys not working.
-
-## 1.3.0 
-* Added Stack Total Inventory Count functionality.
-
-## 1.2.0 
-* Added implant indicator.
-* Added logging for patch exceptions.
-
-## 1.1.0 
-* Added "Move to Recycler" functionality
