@@ -134,6 +134,13 @@ namespace RedsOptionalTweaks.Mcm
 
             ];
 
+            string disabledItems = Plugin.DisableManager.GetDisabledItemNames();
+
+            if(!string.IsNullOrEmpty(disabledItems))
+            {
+                configValues.Insert(0, new ConfigValue("__Disabled Note", $"<color=#FF0000>The following items have been temporarily disabled due to known issues:  '{disabledItems}'</color>", "Disabled"));
+            }
+
             ModConfigMenuAPI.RegisterModConfig("Red's Optional Tweaks", configValues, OnSave);
         }
 

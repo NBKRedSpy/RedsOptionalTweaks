@@ -40,13 +40,32 @@ namespace RedsOptionalTweaks
                 var json = File.ReadAllText(_disableFilePath);
                 _disableFlags = JsonConvert.DeserializeObject<Dictionary<string, bool>>(json) ?? new Dictionary<string, bool>();
 
-                Plugin.Logger.Log($"Loaded {_disableFlags.Count} feature disable flags from FeatureDisable.json");
+                string disabledItems = GetDisabledItemNames();
+
+                if(!string.IsNullOrEmpty(disabledItems))
+                {
+                    Plugin.Logger.LogWarning($"The following features are force-disabled by the mod author: {disabledItems}");
+                }
             }
             catch (Exception ex)
             {
                 Plugin.Logger.LogError(ex, $"Failed to load FeatureDisable.json. All features will respect user config.");
                 _disableFlags = new Dictionary<string, bool>();
             }
+        }
+
+        /// <summary>
+        /// Returns a comma-separated list of the names of all items that are currently disabled.
+        /// </summary>
+        /// <returns>A string containing the names of all disabled items, separated by commas. Returns an empty string if no
+        /// items are disabled.</returns>
+        public string GetDisabledItemNames()
+        {
+            var disabledItems = _disableFlags
+                .Where(kv => kv.Value == false)
+                .Select(kv => kv.Key)
+                .ToList();
+            return string.Join(", ", disabledItems);
         }
 
         /// <summary>
