@@ -24,7 +24,9 @@ namespace RedsOptionalTweaks.Patches
         {
             try
             {
-                return Plugin.Config.EnableMouseQuickTossKey;
+                return Plugin.DisableManager.IsFeatureEnabled(
+                    nameof(ModConfig.EnableMouseQuickTossKey),
+                    Plugin.Config.EnableMouseQuickTossKey);
             }
             catch (Exception ex)
             {

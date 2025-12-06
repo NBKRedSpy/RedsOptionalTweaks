@@ -27,7 +27,9 @@ namespace RedsOptionalTweaks.Patches.ImplantIndicator
 
             try
             {
-                return Plugin.Config.EnableImplantIndicator;
+                return Plugin.DisableManager.IsFeatureEnabled(
+                    nameof(ModConfig.EnableImplantIndicator),
+                    Plugin.Config.EnableImplantIndicator);
             }
             catch (Exception ex)
             {

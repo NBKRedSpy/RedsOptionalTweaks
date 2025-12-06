@@ -11,7 +11,9 @@ namespace RedsOptionalTweaks.Patches.HoldToReload
     {
         public static bool Prepare()
         {
-            return Plugin.Config.EnableHoldToReload;
+            return Plugin.DisableManager.IsFeatureEnabled(
+                nameof(ModConfig.EnableHoldToReload),
+                Plugin.Config.EnableHoldToReload);
         }
 
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)

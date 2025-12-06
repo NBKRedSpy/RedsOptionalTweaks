@@ -26,6 +26,8 @@ namespace RedsOptionalTweaks
 
         public static Logger Logger = new Logger();
 
+        public static FeatureDisableManager DisableManager { get; private set; }
+
         public static State State { get; set; } = null;
 
         internal static McmConfiguration McmConfiguration { get; private set; }
@@ -42,6 +44,14 @@ namespace RedsOptionalTweaks
             Directory.CreateDirectory(ConfigDirectories.ModPersistenceFolder);
             Config =  new ModConfig(ConfigDirectories.ConfigPath).LoadConfig();
 
+            // Load feature force-disable flags
+            string disablePath = Path.Combine(
+                Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
+                "FeatureDisable.json"
+            );
+            DisableManager = new FeatureDisableManager(disablePath);
+            DisableManager.LoadDisableFlags();
+
             McmConfiguration = new McmConfiguration(Config);
             McmConfiguration.TryConfigure();
 
@@ -53,7 +63,9 @@ namespace RedsOptionalTweaks
         private static void ApplyNonHarmonyPatches()
         {
             //Increases the ship speed if enabled.
-            if (Config.EnableShipSpeedBoost)
+            if (DisableManager.IsFeatureEnabled(
+                nameof(ModConfig.EnableShipSpeedBoost),
+                Config.EnableShipSpeedBoost))
             {
                 Data.Global.DistanceToHours /= Config.ShipSpeedIncrease;
             }

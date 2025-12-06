@@ -21,7 +21,9 @@ namespace RedsOptionalTweaks.Patches.SplitStackHotkeys
         {
             try
             {
-                return Plugin.Config.EnableSplitStacksKeys;
+                return Plugin.DisableManager.IsFeatureEnabled(
+                    nameof(ModConfig.EnableSplitStacksKeys),
+                    Plugin.Config.EnableSplitStacksKeys);
             }
             catch (Exception ex)
             {

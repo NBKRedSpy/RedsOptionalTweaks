@@ -17,6 +17,13 @@ namespace RedsOptionalTweaks.Patches.RecycleHotkey
     [HarmonyPatch(typeof(ArsenalScreen), nameof(ArsenalScreen.Configure))]
     public static class ScreenWithShipCargo_Configure_Patch
     {
+        public static bool Prepare()
+        {
+            return Plugin.DisableManager.IsFeatureEnabled(
+                nameof(ModConfig.EnableRecycleHotkey),
+                Plugin.Config.EnableRecycleHotkey);
+        }
+
         public static void Prefix(ArsenalScreen __instance)
         {
             try
