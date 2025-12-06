@@ -38,6 +38,7 @@
 		</Reference>
 		<Reference Include="Unity.TextMeshPro">
 		  <HintPath>$(ManagedPath)Unity.TextMeshPro.dll</HintPath>
+			<Private>False</Private>
 		</Reference>
 		<Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
 			<SpecificVersion>False</SpecificVersion>
@@ -46,6 +47,7 @@
 		</Reference>
 		<Reference Include="UnityEngine.AudioModule">
 		  <HintPath>$(ManagedPath)UnityEngine.AudioModule.dll</HintPath>
+			<Private>False</Private>
 		</Reference>
 		<Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
 			<SpecificVersion>False</SpecificVersion>
