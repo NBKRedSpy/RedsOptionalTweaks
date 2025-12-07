@@ -107,6 +107,9 @@ Thanks!
 # Source Code
 Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalTweaks
 
+# Changes
+See the [CHANGELOG.md](./CHANGELOG.md) for the list of changes.
+
 # Credits
 * Special thanks to Crynano for his excellent Mod Configuration Menu.
 * The TF2 RedSpy icon is from the reddit user [iwilding](https://www.reddit.com/user/iwilding/) from the post found [here](https://www.reddit.com/r/tf2/comments/2384j5/i_drew_a_red_spy/)
