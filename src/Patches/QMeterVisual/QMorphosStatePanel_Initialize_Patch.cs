@@ -14,9 +14,10 @@ namespace RedsOptionalTweaks.Patches.QMeterVisual
 
         public static bool Prepare()
         {
-            return true;
+            return Plugin.DisableManager.IsFeatureEnabled(
+                nameof(ModConfig.EnableQMeterVisual),
+                Plugin.Config.EnableQMeterVisual);
         }
-
 
         public static void Postfix(QMorphosStatePanel __instance)
         {

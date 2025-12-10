@@ -149,6 +149,16 @@ namespace RedsOptionalTweaks
 
         #endregion
 
+        #region QMeter Visual
+
+        /// <summary>
+        /// Enables changing the QMorphos state name to yellow when above 800.
+        /// This matches the music intensity change in the game at this level.
+        /// </summary>
+        public bool EnableQMeterVisual { get; set; } = false;
+
+        #endregion
+
 
         public ModConfig()
         {

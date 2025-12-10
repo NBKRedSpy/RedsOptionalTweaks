@@ -56,6 +56,12 @@ namespace RedsOptionalTweaks.Mcm
 
                 #endregion
 
+                #region QMeter Visual
+                CreateConfigProperty(nameof(ModConfig.EnableQMeterVisual),
+                    "When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.",
+                    header: "QMeter Visual"),
+                #endregion
+
                 #region Show Experience Maxed
                     CreateConfigProperty(nameof(ModConfig.EnableShowExpMaxed),
                     "Adds an astrisk to the Experience Gaining Item tooltip to indicate that the merc has the perk, but is already at max level",
