@@ -5,5 +5,6 @@
   "EnableSplitStacksKeys": true,
   "EnableRecycleHotkey": true,
   "EnableStackTotalInventoryCount": true,
-  "EnableImplantIndicator": true
+  "EnableImplantIndicator": true,
+  "EnableShowExpMaxed": true
 }

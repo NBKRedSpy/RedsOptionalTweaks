@@ -73,6 +73,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Include=".github\copilot-instructions.md" />
 		<None Include="FeatureDisable.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>

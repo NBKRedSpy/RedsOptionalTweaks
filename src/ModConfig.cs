@@ -42,6 +42,9 @@ namespace RedsOptionalTweaks
         public bool EnableHoldToReload { get; set; } = false;
         #endregion
 
+        public bool EnableShowExpMaxed { get; set; } = false;   
+
+
         #region Context Menu Split Stack Settings
 
         /// <summary>

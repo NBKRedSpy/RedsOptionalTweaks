@@ -1,7 +1,11 @@
 # RedsOptionalTweaks - AI Coding Guide
 
 ## Project Overview
-This is a **BepInEx/Harmony mod** for the game **Quasimorph**. The mod provides optional gameplay tweaks configurable through MCM (Mod Configuration Menu), using regular method patchs as well as  IL patching to modify game behavior.
+This is a **Harmony mod** for the game **Quasimorph**. The mod provides optional gameplay tweaks configurable through MCM (Mod Configuration Menu), 
+using regular method patchs as well as  IL patching to modify game behavior.
+
+- This is Harmony, not HarmonyX.  Do not use the HarmonyX specific APIs.
+- When creating a new CodeInstruction Call, use the CodeInstruction.Call method instead of creating a new CodeInstruction manually.
 
 ## C# styles
 - Follows standard C# conventions (PascalCase for types/methods, camelCase for variables)

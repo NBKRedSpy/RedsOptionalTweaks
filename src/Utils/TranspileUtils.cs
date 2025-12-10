@@ -28,6 +28,8 @@ namespace RedsOptionalTweaks.Utils
         {
             return new CodeMatch((x) => 
             {
+                if (x.opcode != opcode) return false;
+
                 LocalBuilder localBuilder = x.operand as LocalBuilder;
                 if (localBuilder == null) throw new ArgumentException("operand is not a local builder");
 

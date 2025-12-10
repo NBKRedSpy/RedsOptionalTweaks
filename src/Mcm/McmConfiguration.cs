@@ -38,11 +38,13 @@ namespace RedsOptionalTweaks.Mcm
 
                 #endregion
 
+
                 #region Hold to Reload
                 CreateConfigProperty(nameof(ModConfig.EnableHoldToReload),
                     "Enables holding the reload key to continuously reload weapons.",
                     header: "Hold to Reload"),
                 #endregion
+
                 #region Mouse Quick Toss Rebind
 
                 CreateConfigProperty(nameof(ModConfig.EnableMouseQuickTossKey), "Enables rebinding the mouse transfer key.",
@@ -53,6 +55,13 @@ namespace RedsOptionalTweaks.Mcm
                     "Mouse Quick Toss Key", "Mouse Quick Toss Rebind", sort: true),
 
                 #endregion
+
+                #region Show Experience Maxed
+                    CreateConfigProperty(nameof(ModConfig.EnableShowExpMaxed),
+                    "Adds an astrisk to the Experience Gaining Item tooltip to indicate that the merc has the perk, but is already at max level",
+                    header: "Show Experience Maxed"),
+                #endregion
+
                 #region Ship Speed Boost
 
                 CreateConfigProperty(nameof(ModConfig.EnableShipSpeedBoost),

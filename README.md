@@ -14,6 +14,7 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 | QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
+| QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
 
  🧪 More items in the future...
 
@@ -59,6 +60,9 @@ Here's what happens:
 
 The mod is designed to protect you from getting caught with your pants down. If the reload happened right at the start of your next action, you'd be stuck reloading even if an enemy suddenly appears. This way, you can react immediately and take a shot instead of being locked into a reload when you need to defend yourself.
  
+## Show Experience Maxed
+![Max Exp Tooltip](./media/MaxExp.webp)
+
 ## Split Stacks Hotkeys
 When a stack of items is being split, the split dialog is shown.  This modification adds the following:
 
