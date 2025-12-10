@@ -27,7 +27,6 @@ Unfortunately Steam has a limit of how much text can be put in a mod's descripti
 See the full documentation and images here:
 https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/README.md
 
-
 ## Maximum Compatibility
 Each modification works like its own mini-mod. Disable one, and it's as if it was never there.  This is useful for working around bugs or handling conflicts with other mods.
 See the [Compatibility - Technical](#compatibility---technical) section for details.

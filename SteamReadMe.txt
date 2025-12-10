@@ -1,10 +1,12 @@
 [h1]Quasimorph Red's Optional Modifications Mod[/h1]
 
-[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/thumbnail.png[/img]
 
 [h1]Modifications Overview[/h1]
 
-Below is a list of functionality in mod.  By default, all functionality must be enabled in the Mods screen on the main menu.
+Below is a list of functionality in mod.
+
+By default, each individual piece of functionality has to be turned on in the Mods -> Red's Optional Tweaks screen.
+This allows the user to choose only the changes they want.
 [table]
 [tr]
 [td]Type
@@ -65,6 +67,14 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 [tr]
 [td]QoL
 [/td]
+[td]QMeter Visual
+[/td]
+[td]When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
 [td]Split Stacks Hotkeys
 [/td]
 [td]Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
@@ -92,13 +102,18 @@ See the Compatibility - Technical section for details.
 
 [h1]Modifications[/h1]
 
+[h2]Q-Meter Visual[/h2]
+
+
+Changes the color of the Q-Meter text to yellow once the level gets over 800.
+If the user is playing with the background music off, they do not have the music change as an indicator of a high Q-Meter.
+
 [h2]Ship Speed Boost[/h2]
 
 Changes the ship's speed to decrease travel times.  By default this sets the ship to 2x the speed.
 
 [h2]Implant Indicator[/h2]
 
-[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ImplantIndicator.png[/img]
 
 When inspecting a creature during a raid, the yellow "has augment" indicator will be green if there is an implant installed.
 
@@ -134,7 +149,6 @@ The mod is designed to protect you from getting caught with your pants down. If 
 
 [h2]Show Experience Maxed[/h2]
 
-[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/MaxExp.webp[/img]
 
 [h2]Split Stacks Hotkeys[/h2]
 
@@ -154,13 +168,11 @@ Hold R while hovering over items in the ship cargo to move that item to the recy
 When in a screen that shows item stacks, holding alt will show the total amount of each item type that are owned.  This is the same count as found in the tooltip when hovering an item.
 
 [b]Normal count showing how many items are in the stack:[/b]
-[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ShowTotalAmountBefore.png[/img]
 
 [b]Holding alt shows the amount currently owned.[/b]
-[img]https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/media/ShowTotalAmountAfter.png[/img]
+
 This allows the user to quickly determine if they want to pickup item X or item Y depending on how much of each they already have back in the ship.
 The green color indicates that the user owns 20 or less of that item.  The value can be completely turned off by setting the threshold value to zero.
-
 This number is identical to what is shown on the tooltip, so items that are dropped off in the shuttle or drop pod are not included in the count.
 
 [h1]Compatibility - Technical[/h1]
@@ -194,7 +206,7 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 
 [h1]Changes[/h1]
 
-See the [url=https://raw.githubusercontent.com/NBKRedSpy/RedsOptionalTweaks/main/CHANGELOG.md]CHANGELOG.md[/url] for the list of changes.
+See the [url=./CHANGELOG.md]CHANGELOG.md[/url] for the list of changes.
 
 [h1]Credits[/h1]
 [list]
