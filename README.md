@@ -3,7 +3,10 @@
 ![thumbnail icon](media/thumbnail.png)
 
 # Modifications Overview
-Below is a list of functionality in mod.  By default, all functionality must be enabled in the Mods screen on the main menu.
+Below is a list of functionality in mod.  
+
+By default, each individual piece of functionality has to be turned on in the Mods -> Red's Optional Tweaks screen.
+This allows the user to choose only the changes they want.
 
 | Type | Name | Description |
 | :--- | :--- | :--- |
@@ -19,6 +22,7 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 
  🧪 More items in the future...
 
+
 For details on each modification, see the related section below.
 
 ## Maximum Compatibility
@@ -27,6 +31,13 @@ Each modification works like its own mini-mod. Disable one, and it's as if it wa
 See the [Compatibility - Technical](#compatibility---technical) section for details.
 
 # Modifications
+
+## Q-Meter Visual
+![Q-Meter](./media/QmorphosVisual.webp)
+
+Changes the color of the Q-Meter text to yellow once the level gets over 800.
+If the user is playing with the background music off, they do not have the music change as an indicator of a high Q-Meter.
+
 ## Ship Speed Boost
 Changes the ship's speed to decrease travel times.  By default this sets the ship to 2x the speed.
 
