@@ -44,6 +44,14 @@ namespace RedsOptionalTweaks
 
         public bool EnableShowExpMaxed { get; set; } = false;   
 
+        #region Show Station Info
+        /// <summary>
+        /// Enables the ability to see station trade info on mission nodes by holding Alt.
+        /// </summary>
+        public bool EnableShowStationInfo { get; set; } = false;
+        #endregion
+
+
 
         #region Context Menu Split Stack Settings
 

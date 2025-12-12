@@ -17,8 +17,9 @@ using regular method patchs as well as  IL patching to modify game behavior.
 ### Core Components
 - **Plugin.cs**: Entry point with `[Hook(ModHookType.AfterConfigsLoaded)]` - patches applied after configs load
 - **ModConfig.cs**: Feature flags and settings, serialized to `AppData/../Quasimorph_ModConfigs/{ModName}/config.json`
+- **Mcm/McmConfiguration.cs**: The GUI for MCM configuration, mirrors `ModConfig.cs`
+- **FeatureDisable.json**: The override flags for disabling features without changing main config.  Each feature's enable property in the ModConfig.cs has a corresponding flag in this file.  Defaults to true.
 - **Patches/**: Feature-specific Harmony patches organized by subdirectory (HoldToReload, ImplantIndicator, RecycleHotkey, etc.)
-- **Mcm/**: MCM integration for in-game configuration UI
 - **Utils/**: Shared utilities for logging, transpiling, and Unity component injection
 
 ### Mod Loading Flow
@@ -30,19 +31,6 @@ using regular method patchs as well as  IL patching to modify game behavior.
 6. Harmony patches applied via `PatchAll()`
 
 ## Critical Patterns
-
-### Feature Toggle Pattern
-**Every patch class** uses `Prepare()` to conditionally enable based on config:
-```csharp
-[HarmonyPatch(typeof(DragController), nameof(DragController.Update))]
-public static class DragController_Update_Patch
-{
-    public static bool Prepare()
-    {
-        return Plugin.Config.EnableMouseQuickTossKey; // Feature flag from config
-    }
-}
-```
 
 ### IL Transpiler Pattern
 Most patches use **transpilers** (not Prefix/Postfix) to modify game IL directly:
@@ -72,12 +60,26 @@ ShipCargoUpdateComponent.CreateComponent<ShipCargoUpdateComponent>(__instance);
 - **Manual Testing**: Run game, enable mod in mod manager, test feature toggles in MCM
 - **Steam ID**: Set in `.csproj` `<SteamId>` property (currently `3589610029`)
 
-### Adding New Features
-1. Add feature flag to `ModConfig.cs` (with default value)
-2. Create patch class in `Patches/{FeatureName}/`
-3. Implement `Prepare()` method checking config flag
-4. Add MCM UI entry in `Mcm/McmConfiguration.cs` `Configure()` method
-5. If complex, document patch strategy in `_README.md` (see HoldToReload example)
+### Adding a New Feature Enable Flag 
+* A patch class will have a `_Patch.cs` suffix.  There may be many _patch.cs files in a single feature folder.
+* The functionality will be the name of the folder the patch is in. For example, if the patch is in `Patches/ImplantIndicator/`, the feature name is `ImplantIndicator`.  
+* Add a new property in `ModConfig.cs`, using the feature name and prefix with "Enable", and defaulting to false.  For example: `public bool Enable{FeatureName} { get; set; } = false;`
+* Create a Prepare() as defined in the Feature Toggle Pattern above.
+* Add an entry in the MCM configuration UI in `Mcm/McmConfiguration.cs` in the `Configure()` method.  For example:
+```csharp
+    CreateConfigProperty(nameof(ModConfig.Enable{FeatureName}), "Enables {FeatureName summary}",
+        header: "<{FeatureName friendly header text}"),
+```
+* If the Patch classes in the feature folder do not have Prepare() methods, add them now to check the config flag.  For example:
+```csharp
+        public static bool Prepare()
+        {
+            return Plugin.DisableManager.IsFeatureEnabled(
+                nameof(ModConfig.Enable{FeatureName}),
+                Plugin.Config.Enable{FeatureName});
+        }
+```
+* Add a `_README.md` in the feature folder documenting the feature's purpose, implementation details, and any interactions between multiple patches
 
 ### IL Patching Debugging
 When writing transpilers:
@@ -102,6 +104,7 @@ When writing transpilers:
 - Patch naming: `{TargetClass}_{TargetMethod}_Patch.cs`
 - Always try-catch Harmony methods and log errors to `Plugin.Logger`
 - Use one class per class method target.
+- **All patches in a feature folder share the same feature flag** - all must implement `Prepare()` with identical logic
 
 ### Game-Specific Dependencies
 - **Assembly-CSharp**: Main game DLL, **publicized** via `BepInEx.AssemblyPublicizer.MSBuild`
@@ -122,8 +125,11 @@ Features like HoldToReload require **multiple patches** due to Quasimorph's turn
 - **RedsOptionalTweaks.csproj**: Build configuration, Steam Workshop deployment
 
 ## Common Pitfalls
-- Forgetting `Prepare()` method - patch will always apply even if disabled
+- **Forgetting `Prepare()` method** - patch will always apply even if disabled
+- **Missing try-catch in `Prepare()`** - failures silently disable the patch without logging
+- **Inconsistent feature flags** - all patches in a feature folder must check the same flag
 - Not using `<Private>False</Private>` in references - causes DLL conflicts
 - Hardcoding KeyCodes instead of using config values
 - Missing error handling in `Prepare()`, `Transpiler()`, `Prefix()`, and `Postfix()` methods
 - Not using the `$(ManagedPath)` variable for assembly references in the .csproj file
+- Not documenting multi-patch features in `_README.md`

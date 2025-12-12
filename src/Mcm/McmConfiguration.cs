@@ -68,6 +68,12 @@ namespace RedsOptionalTweaks.Mcm
                     header: "Show Experience Maxed"),
                 #endregion
 
+                #region Show Station Info
+                CreateConfigProperty(nameof(ModConfig.EnableShowStationInfo),
+                    "Enables the ability to see station trade info on mission nodes by holding Alt.",
+                    header: "Show Station Info"),
+                #endregion
+
                 #region Ship Speed Boost
 
                 CreateConfigProperty(nameof(ModConfig.EnableShipSpeedBoost),
