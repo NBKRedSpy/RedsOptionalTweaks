@@ -1,3 +1,6 @@
+# 1.8.0
+* Added "Show Station Info"
+
 # 1.7.0
 * Added Q-Meter warning color.
 

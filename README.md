@@ -17,11 +17,14 @@ This allows the user to choose only the changes they want.
 | QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | QMeter Visual| When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.|
+| QoL | Show Station Info | When a station has a mission, hold the alt key to see the station info.  Important! See notes below.|
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
 
  🧪 More items in the future...
 
+## Notes
+Show Station Info: Currently pressing alt while hovering a station does not work. The user must hold alt *before* hovering the desired station.
 
 For details on each modification, see the related section below.
 
@@ -50,7 +53,6 @@ When inspecting a creature during a raid, the yellow "has augment" indicator wil
 Allows the user to bind the "quick toss" key.  This is where the user can hold the ctrl key down while the mouse is over an item to move the item to the other inventory.
 By default it is remapped to middle mouse button (AKA Mouse2).
 
-
 ## Hold Reload
 When moving or waiting a turn, holding the Reload key will continue to reload.  For example, if a shotgun requires a reload, the user can hold the Reload key while moving. For each step, a reload will occur as long as the user is still holding the Reload key.
 
@@ -74,6 +76,12 @@ The mod is designed to protect you from getting caught with your pants down. If 
  
 ## Show Experience Maxed
 ![Max Exp Tooltip](./media/MaxExp.webp)
+
+## Show Station Info
+![Mission and Info Side by Side](./media/ShowStationInfo.webp)
+
+Allows the user to see the station info, even when there is a mission.
+Important! Currently you must hold the alt key down *before* hovering over the station.
 
 ## Split Stacks Hotkeys
 When a stack of items is being split, the split dialog is shown.  This modification adds the following:

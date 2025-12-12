@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace RedsOptionalTweaks.Patches.ShowStationInfo
 {
+
+    /// <summary>
+    /// Show the station info the user is holding down the alt key.  Otherwise, show the normal info.
+    /// </summary>
     [HarmonyPatch(typeof(TooltipFactory), nameof(TooltipFactory.BuildStationTooltip))]
     public class TooltipFactory_BuildStationTooltip_Patch
     {
@@ -15,13 +19,6 @@ namespace RedsOptionalTweaks.Patches.ShowStationInfo
                 Plugin.Config.EnableShowStationInfo);
         }
 
-        /// <summary>
-        /// Show the station info the user is holding down the alt key.  Otherwise, show the normal info.
-        /// </summary>
-        /// <param name="__instance"></param>
-        /// <param name="stationStatus"></param>
-        /// <param name="mission"></param>
-        /// <returns></returns>
         public static bool  Prefix(TooltipFactory __instance, ref StationStatus stationStatus, ref Mission mission)
         {
             /// WARNING Function Takeover - This takes over the game's function when showing a mission.
