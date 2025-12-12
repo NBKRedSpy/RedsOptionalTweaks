@@ -23,9 +23,6 @@ This allows the user to choose only the changes they want.
 
  🧪 More items in the future...
 
-## Notes
-Show Station Info: Currently pressing alt while hovering a station does not work. The user must hold alt *before* hovering the desired station.
-
 For details on each modification, see the related section below.
 
 ## Maximum Compatibility
@@ -67,6 +64,8 @@ The purpose of my modification is to mirror the base game's requirement to remem
 ![Mission and Info Side by Side](./media/ShowStationInfo.webp)
 
 Allows the user to see the station info, even when there is a mission.
+Note that the alt screen will always show the station as peaceful.  This is a quirk of the patch.
+
 Important! Currently you must hold the alt key down *before* hovering over the station.
 
 ## Split Stacks Hotkeys
