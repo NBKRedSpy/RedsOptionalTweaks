@@ -1,3 +1,6 @@
+# 1.7.0
+* Added Q-Meter warning color.
+
 # 1.6.0
 * Added "Show Experience Maxed" functionality.
 
