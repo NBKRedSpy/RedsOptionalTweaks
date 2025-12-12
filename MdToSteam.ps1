@@ -25,7 +25,9 @@ $repoRoot -replace 'https://github.com', 'https://raw.githubusercontent.com' -re
     $basePath = "$_/main"
 }
 
-& MarkdownToSteam.exe -i ReadMe.md -o SteamReadMe.txt -b $basePath
+
+# Note - this uses the SteamRedMe.md as the README.md is too long for Steam.
+& MarkdownToSteam.exe -i SteamReadMe.md -o SteamReadMe.txt -b $basePath
 
 if($Clip) {
     Get-Content SteamReadMe.txt | Set-Clipboard

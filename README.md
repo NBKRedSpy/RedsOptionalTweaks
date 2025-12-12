@@ -3,7 +3,10 @@
 ![thumbnail icon](media/thumbnail.png)
 
 # Modifications Overview
-Below is a list of functionality in mod.  By default, all functionality must be enabled in the Mods screen on the main menu.
+Below is a list of functionality in mod.  
+
+By default, each individual piece of functionality has to be turned on in the Mods -> Red's Optional Tweaks screen.
+This allows the user to choose only the changes they want.
 
 | Type | Name | Description |
 | :--- | :--- | :--- |
@@ -13,10 +16,12 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 | QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
 | QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
+| QoL | QMeter Visual| When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.|
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
 
  🧪 More items in the future...
+
 
 For details on each modification, see the related section below.
 
@@ -26,6 +31,13 @@ Each modification works like its own mini-mod. Disable one, and it's as if it wa
 See the [Compatibility - Technical](#compatibility---technical) section for details.
 
 # Modifications
+
+## Q-Meter Visual
+![Q-Meter](./media/QmorphosVisual.webp)
+
+Changes the color of the Q-Meter text to yellow once the level gets over 800.
+If the user is playing with the background music off, they do not have the music change as an indicator of a high Q-Meter.
+
 ## Ship Speed Boost
 Changes the ship's speed to decrease travel times.  By default this sets the ship to 2x the speed.
 

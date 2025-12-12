@@ -3,7 +3,10 @@
 
 [h1]Modifications Overview[/h1]
 
-Below is a list of functionality in mod.  By default, all functionality must be enabled in the Mods screen on the main menu.
+Below is a list of functionality in mod.
+
+By default, each individual piece of functionality has to be turned on in the Mods -> Red's Optional Tweaks screen.
+This allows the user to choose only the changes they want.
 [table]
 [tr]
 [td]Type
@@ -64,6 +67,14 @@ Below is a list of functionality in mod.  By default, all functionality must be 
 [tr]
 [td]QoL
 [/td]
+[td]QMeter Visual
+[/td]
+[td]When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
 [td]Split Stacks Hotkeys
 [/td]
 [td]Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
@@ -90,6 +101,12 @@ Each modification works like its own mini-mod. Disable one, and it's as if it wa
 See the Compatibility - Technical section for details.
 
 [h1]Modifications[/h1]
+
+[h2]Q-Meter Visual[/h2]
+
+
+Changes the color of the Q-Meter text to yellow once the level gets over 800.
+If the user is playing with the background music off, they do not have the music change as an indicator of a high Q-Meter.
 
 [h2]Ship Speed Boost[/h2]
 
