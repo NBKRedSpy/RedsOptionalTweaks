@@ -7,5 +7,6 @@
   "EnableStackTotalInventoryCount": true,
   "EnableImplantIndicator": true,
   "EnableShowExpMaxed": true,
-  "EnableQMeterVisual":  true
+  "EnableQMeterVisual":  true,
+  "EnableShowStationInfo": true
 }

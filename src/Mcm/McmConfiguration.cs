@@ -68,9 +68,17 @@ namespace RedsOptionalTweaks.Mcm
                     header: "Show Experience Maxed"),
                 #endregion
 
-                #region Ship Speed Boost
+                #region Show Station Info
+                CreateConfigProperty(nameof(ModConfig.EnableShowStationInfo),
+                    "Enables the ability to see station trade info on mission nodes by holding Alt.",
+                    header: "Show Station Info"),
 
-                CreateConfigProperty(nameof(ModConfig.EnableShipSpeedBoost),
+                new ConfigValue("__StationAltWarning", "<color=#FF0000>Note, the alt key must be held down before entering the station rectangle or the alternative tooltip version will not be shown.", header: "Show Station Info"),
+            #endregion
+
+            #region Ship Speed Boost
+
+            CreateConfigProperty(nameof(ModConfig.EnableShipSpeedBoost),
                     "Enables a boost to ship speed.", header: "Ship Speed Boost"),
 
                 CreateConfigProperty(nameof(ModConfig.ShipSpeedIncrease),
