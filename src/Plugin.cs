@@ -2,6 +2,7 @@
 using MGSC;
 using RedsOptionalTweaks.Mcm;
 using RedsOptionalTweaks.Utils;
+using RedsOptionalTweaks_Bootstrap;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,7 +16,7 @@ using Logger = RedsOptionalTweaks.Utils.Logger;
 
 namespace RedsOptionalTweaks
 {
-    public static class Plugin
+    public class Plugin : BootstrapMod
     {
         public const string ReloadCommandKey = "ReloadWeapon";
 
@@ -26,18 +27,19 @@ namespace RedsOptionalTweaks
 
         public static Logger Logger = new Logger();
 
+        public Plugin(HookEvents hookEvents, bool isBeta) : base(hookEvents, isBeta)
+        {
+            hookEvents.AfterConfigsLoaded += AfterConfig;
+        }
+
         public static FeatureDisableManager DisableManager { get; private set; }
 
         public static State State { get; set; } = null;
 
         internal static McmConfiguration McmConfiguration { get; private set; }
 
-        [Hook(ModHookType.AfterConfigsLoaded)]
         public static void AfterConfig(IModContext context)
         {
-
-            //Verify version
-            if (!IsCompatibleWithGameVersion()) return;
 
             State = context.State;  
 
