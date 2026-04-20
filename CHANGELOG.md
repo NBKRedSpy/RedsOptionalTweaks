@@ -1,3 +1,6 @@
+# 1.8.1
+* UNSTABLE BETA.501 compatibility 
+
 # 1.8.0
 * Added "Show Station Info"
 
