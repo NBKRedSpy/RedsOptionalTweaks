@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11217.181 d18.0
+VisualStudioVersion = 18.0.11217.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedsOptionalTweaks", "RedsOptionalTweaks.csproj", "{BC7CA7B1-97E8-4DC3-BB79-1D5102E0C42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedsOptionalTweaks_Bootstrap", "..\..\bootstrap\src\RedsOptionalTweaks_Bootstrap.csproj", "{8FE89DBA-B3AB-ABA1-8CCC-A92054E30D29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BC7CA7B1-97E8-4DC3-BB79-1D5102E0C42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC7CA7B1-97E8-4DC3-BB79-1D5102E0C42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC7CA7B1-97E8-4DC3-BB79-1D5102E0C42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE89DBA-B3AB-ABA1-8CCC-A92054E30D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE89DBA-B3AB-ABA1-8CCC-A92054E30D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE89DBA-B3AB-ABA1-8CCC-A92054E30D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE89DBA-B3AB-ABA1-8CCC-A92054E30D29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
