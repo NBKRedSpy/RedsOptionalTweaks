@@ -1,3 +1,6 @@
+# 1.8.2
+* Beta to 1.0 Update
+
 # 1.8.1
 * UNSTABLE BETA.501 compatibility 
 
