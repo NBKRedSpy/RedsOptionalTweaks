@@ -27,6 +27,14 @@ This allows the user to choose only the changes they want.
 [tr]
 [td]QoL
 [/td]
+[td]Always Highlight Loot
+[/td]
+[td]Always highlights look when in a raid.  Similar to always holding the alt key
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
 [td]Implant Indicator
 [/td]
 [td]Changes the yellow "has augment" dot to green if the inspected creature has an implant
@@ -109,6 +117,10 @@ Each modification works like its own mini-mod. Disable one, and it's as if it wa
 See the Compatibility - Technical section for details.
 
 [h1]Modifications[/h1]
+
+[h2]Always Highlight Loot[/h2]
+
+The same as always holding the alt key when in a raid.
 
 [h2]Q-Meter Visual[/h2]
 
