@@ -11,6 +11,7 @@ This allows the user to choose only the changes they want.
 | Type | Name | Description |
 | :--- | :--- | :--- |
 | Balance | Ship Speed Boost | Increase the speed of ship travel. |
+| QoL | Always Highlight Loot | Always highlights look when in a raid.  Similar to always holding the alt key|
 | QoL | Implant Indicator | Changes the yellow "has augment" dot to green if the inspected creature has an implant|
 | QoL | Recycle Hotkey Quick Move | Hold R while hovering over items in the ship cargo to move that item to the recycler tab. |
 | QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
@@ -31,6 +32,9 @@ Each modification works like its own mini-mod. Disable one, and it's as if it wa
 See the [Compatibility - Technical](#compatibility---technical) section for details.
 
 # Modifications
+
+## Always Highlight Loot
+The same as always holding the alt key when in a raid.
 
 ## Q-Meter Visual
 ![Q-Meter](./media/QmorphosVisual.webp)

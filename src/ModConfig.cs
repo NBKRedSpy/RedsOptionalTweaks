@@ -42,6 +42,13 @@ namespace RedsOptionalTweaks
         public bool EnableHoldToReload { get; set; } = false;
         #endregion
 
+        #region Always Highlight
+        /// <summary>
+        /// Enables always-on loot highlighting without holding Alt.
+        /// </summary>
+        public bool EnableAlwaysHighlight { get; set; } = false;
+        #endregion
+
         public bool EnableShowExpMaxed { get; set; } = false;   
 
         #region Show Station Info

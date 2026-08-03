@@ -1,3 +1,6 @@
+# 1.9.0
+* Added option to always highlight loot in a raid.
+
 # 1.8.2
 * Beta to 1.0 Update
 

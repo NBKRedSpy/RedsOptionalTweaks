@@ -45,6 +45,12 @@ namespace RedsOptionalTweaks.Mcm
                     header: "Hold to Reload"),
                 #endregion
 
+                #region Always Highlight
+                CreateConfigProperty(nameof(ModConfig.EnableAlwaysHighlight),
+                    "Enables always-on loot highlighting without holding Alt.",
+                    header: "Always Highlight Loot"),
+                #endregion
+
                 #region Mouse Quick Toss Rebind
 
                 CreateConfigProperty(nameof(ModConfig.EnableMouseQuickTossKey), "Enables rebinding the mouse transfer key.",
