@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
 using UnityEngine;
+using static UnityEngine.UI.Image;
 
 namespace RedsOptionalTweaks.Patches.HoldToReload
 {
@@ -24,23 +25,34 @@ namespace RedsOptionalTweaks.Patches.HoldToReload
 
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
+
             var original = instructions.ToList();
 
-            //Goal: Change the IL to not clear the queue if the reload key is down.
-            //There is only one Input.anyKeyDown in this method.
-            var result = new CodeMatcher(original)
-                .MatchEndForward(
-                    //new CodeMatch(OpCodes.Call,   AccessTools.Method(typeof(Input), nameof(Input.anyKeyDown)))
-                    new CodeMatch(OpCodes.Call, AccessTools.PropertyGetter(typeof(Input), nameof(Input.anyKeyDown)))
-                    )
-                .ThrowIfInvalid("Unable to find the key down")
-                .RemoveInstruction()
-                .Insert(CodeInstruction.Call(() => ClearQueueCheck()))
-                .InstructionEnumeration().ToList();
+            try
+            {
+
+                //Goal: Change the IL to not clear the queue if the reload key is down.
+                //There is only one Input.anyKeyDown in this method.
+                var result = new CodeMatcher(original)
+                    .MatchEndForward(
+                        //new CodeMatch(OpCodes.Call,   AccessTools.Method(typeof(Input), nameof(Input.anyKeyDown)))
+                        new CodeMatch(OpCodes.Call, AccessTools.PropertyGetter(typeof(Input), nameof(Input.anyKeyDown)))
+                        )
+                    .ThrowIfInvalid("Unable to find the key down")
+                    .RemoveInstruction()
+                    .Insert(CodeInstruction.Call(() => ClearQueueCheck()))
+                    .InstructionEnumeration().ToList();
 
 
-            //Utils.TranspileUtils.LogIL(result, @"C:\work\s.il");
-            return result;
+                //Utils.TranspileUtils.LogIL(result, @"C:\work\s.il");
+                return result;
+
+            }
+            catch (System.Exception ex)
+            {
+                Plugin.Logger.LogError(ex, $"Failed to transpile DungeonGameMode.Update.  Using original code instead.");
+                return original;
+            }
         }
 
         private static bool ClearQueueCheck()

@@ -16,6 +16,7 @@ namespace RedsOptionalTweaks.Patches.AlwaysHighlight
         public static void Prefix(ObjHighlightController __instance, ref bool altPressed)
         {
             altPressed = true;
+
         }
     }
 }

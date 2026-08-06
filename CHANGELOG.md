@@ -1,3 +1,7 @@
+# 1.9.1 
+* Added enemy highlight.  
+* Fixed issue where the health bar was prevented from showing the flashing "estimated" damage.
+
 # 1.9.0
 * Added option to always highlight loot in a raid.
 

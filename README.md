@@ -121,7 +121,7 @@ Thanks!
 Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalTweaks
 
 # Changes
-See the [CHANGELOG.md](./CHANGELOG.md) for the list of changes.
+See the https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/CHANGELOG.md for the list of changes.
 
 # Credits
 * Special thanks to Crynano for his excellent Mod Configuration Menu.
