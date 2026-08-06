@@ -217,7 +217,7 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 
 [h1]Changes[/h1]
 
-See the [url=./CHANGELOG.md]CHANGELOG.md[/url] for the list of changes.
+See the https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/CHANGELOG.md for the list of changes.
 
 [h1]Credits[/h1]
 [list]
