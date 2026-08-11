@@ -47,7 +47,7 @@
 		<ItemGroup>
 			<FilesToDelete Include="$(WorkshopPath)/*" />
 			<Delete Files="@(FilesToDelete)" />
-			<BuildSource Include="$(TargetDir)/*.*;../modmanifest.json; ../version-info.json" />
+			<BuildSource Include="$(TargetDir)/*.*;../modmanifest.json; ../version-info.json; ../../main-repo/media/thumbnail.png" />
 		</ItemGroup>
 		<Message Importance="high" Text="Workshop folder: $(WorkshopPath)" />
 		<MakeDir Directories="$(WorkshopPath)" ContinueOnError="true" />
