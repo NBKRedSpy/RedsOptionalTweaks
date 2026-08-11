@@ -1,6 +1,10 @@
 [h1]Quasimorph Red's Optional Modifications Mod[/h1]
 
 
+[h1]Update Note[/h1]
+
+Implant Indicator is now a standalone mod.  https://steamcommunity.com/sharedfiles/filedetails/?id=3781675766
+
 [h1]Modifications Overview[/h1]
 
 Below is a list of functionality in mod.
@@ -30,14 +34,6 @@ This allows the user to choose only the changes they want.
 [td]Always Highlight Loot
 [/td]
 [td]Always highlights look when in a raid.  Similar to always holding the alt key
-[/td]
-[/tr]
-[tr]
-[td]QoL
-[/td]
-[td]Implant Indicator
-[/td]
-[td]Changes the yellow "has augment" dot to green if the inspected creature has an implant
 [/td]
 [/tr]
 [tr]
@@ -78,14 +74,6 @@ This allows the user to choose only the changes they want.
 [td]QMeter Visual
 [/td]
 [td]When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.
-[/td]
-[/tr]
-[tr]
-[td]QoL
-[/td]
-[td]Show Station Info
-[/td]
-[td]When a station has a mission, hold the alt key to see the station info.  Important! Must hold down alt before entering the station's UI rectangle.
 [/td]
 [/tr]
 [tr]
@@ -132,11 +120,6 @@ If the user is playing with the background music off, they do not have the music
 
 Changes the ship's speed to decrease travel times.  By default this sets the ship to 2x the speed.
 
-[h2]Implant Indicator[/h2]
-
-
-When inspecting a creature during a raid, the yellow "has augment" indicator will be green if there is an implant installed.
-
 [h2]Mouse Quick Toss Rebind[/h2]
 
 Allows the user to bind the "quick toss" key.  This is where the user can hold the ctrl key down while the mouse is over an item to move the item to the other inventory.
@@ -152,14 +135,6 @@ The purpose of my modification is to mirror the base game's requirement to remem
 
 [h2]Show Experience Maxed[/h2]
 
-
-[h2]Show Station Info[/h2]
-
-
-Allows the user to see the station info, even when there is a mission.
-Note that the alt screen will always show the station as peaceful.  This is a quirk of the patch.
-
-Important! Currently you must hold the alt key down [i]before[/i] hovering over the station.
 
 [h2]Split Stacks Hotkeys[/h2]
 

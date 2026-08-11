@@ -2,6 +2,10 @@
 
 ![thumbnail icon](media/thumbnail.png)
 
+# Update Note
+Implant Indicator is now a standalone mod.  https://steamcommunity.com/sharedfiles/filedetails/?id=3781675766
+
+
 # Modifications Overview
 Below is a list of functionality in mod.  
 
@@ -12,13 +16,11 @@ This allows the user to choose only the changes they want.
 | :--- | :--- | :--- |
 | Balance | Ship Speed Boost | Increase the speed of ship travel. |
 | QoL | Always Highlight Loot | Always highlights look when in a raid.  Similar to always holding the alt key|
-| QoL | Implant Indicator | Changes the yellow "has augment" dot to green if the inspected creature has an implant|
 | QoL | Recycle Hotkey Quick Move | Hold R while hovering over items in the ship cargo to move that item to the recycler tab. |
 | QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
 | QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | QMeter Visual| When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.|
-| QoL | Show Station Info | When a station has a mission, hold the alt key to see the station info.  Important! Must hold down alt before entering the station's UI rectangle.|
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
 
@@ -45,11 +47,6 @@ If the user is playing with the background music off, they do not have the music
 ## Ship Speed Boost
 Changes the ship's speed to decrease travel times.  By default this sets the ship to 2x the speed.
 
-## Implant Indicator
-![Implant Indicator](./media/ImplantIndicator.png)
-
-When inspecting a creature during a raid, the yellow "has augment" indicator will be green if there is an implant installed.
-
 ## Mouse Quick Toss Rebind
 Allows the user to bind the "quick toss" key.  This is where the user can hold the ctrl key down while the mouse is over an item to move the item to the other inventory.
 By default it is remapped to middle mouse button (AKA Mouse2).
@@ -63,14 +60,6 @@ The purpose of my modification is to mirror the base game's requirement to remem
  
 ## Show Experience Maxed
 ![Max Exp Tooltip](./media/MaxExp.webp)
-
-## Show Station Info
-![Mission and Info Side by Side](./media/ShowStationInfo.webp)
-
-Allows the user to see the station info, even when there is a mission.
-Note that the alt screen will always show the station as peaceful.  This is a quirk of the patch.
-
-Important! Currently you must hold the alt key down *before* hovering over the station.
 
 ## Split Stacks Hotkeys
 When a stack of items is being split, the split dialog is shown.  This modification adds the following:

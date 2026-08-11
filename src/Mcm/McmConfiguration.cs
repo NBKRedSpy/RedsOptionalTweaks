@@ -28,17 +28,6 @@ namespace RedsOptionalTweaks.Mcm
 
                 new ConfigValue("__NoneNote", "Any hotkey can be disabled by setting the key to 'None'", "NOTE"),
 
-                #region Augment Indicator
-                CreateConfigProperty(nameof(ModConfig.EnableImplantIndicator), "Enableds recoloring the augment indicator on the " +
-                    "creature window if there is an implant.",
-                    header: "Augment Indicator"),
-
-                CreateConfigProperty(nameof(ModConfig.ImplantIndicatorColor), "The color to use for the implant indicator",
-                    header: "Augment Indicator"),
-
-                #endregion
-
-
                 #region Hold to Reload
                 CreateConfigProperty(nameof(ModConfig.EnableHoldToReload),
                     "Enables holding the reload key to continuously reload weapons.",
@@ -74,22 +63,14 @@ namespace RedsOptionalTweaks.Mcm
                     header: "Show Experience Maxed"),
                 #endregion
 
-                #region Show Station Info
-                CreateConfigProperty(nameof(ModConfig.EnableShowStationInfo),
-                    "Enables the ability to see station trade info on mission nodes by holding Alt.",
-                    header: "Show Station Info"),
+                #region Ship Speed Boost
 
-                new ConfigValue("__StationAltWarning", "<color=#FF0000>Note, the alt key must be held down before entering the station rectangle or the alternative tooltip version will not be shown.", header: "Show Station Info"),
-            #endregion
+                    CreateConfigProperty(nameof(ModConfig.EnableShipSpeedBoost),
+                        "Enables a boost to ship speed.", header: "Ship Speed Boost"),
 
-            #region Ship Speed Boost
-
-            CreateConfigProperty(nameof(ModConfig.EnableShipSpeedBoost),
-                    "Enables a boost to ship speed.", header: "Ship Speed Boost"),
-
-                CreateConfigProperty(nameof(ModConfig.ShipSpeedIncrease),
-                    "The multiplier to increase ship speed by.  Default is 2.0x.",
-                    1.0f, 20.0f, "Ship Speed Increase Multiplier", "Ship Speed Boost"),
+                    CreateConfigProperty(nameof(ModConfig.ShipSpeedIncrease),
+                        "The multiplier to increase ship speed by.  Default is 2.0x.",
+                        1.0f, 20.0f, "Ship Speed Increase Multiplier", "Ship Speed Boost"),
                 #endregion
 
                 #region Stack Total Inventory Count

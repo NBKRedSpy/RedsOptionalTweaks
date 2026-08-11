@@ -1,3 +1,10 @@
+# 1.9.3 
+* Moved Implant Indicator to its own mod at https://steamcommunity.com/sharedfiles/filedetails/?id=3781675766
+
+
+# 1.9.2 
+* Removed Show Station Info as the game now includes it.
+
 # 1.9.1 
 * Added enemy highlight.  
 * Fixed issue where the health bar was prevented from showing the flashing "estimated" damage.
