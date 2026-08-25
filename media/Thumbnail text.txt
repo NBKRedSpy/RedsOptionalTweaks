@@ -1,10 +1,9 @@
-🌟New for 1.5.0!
-  Hold to Reload
-
-🚀 Configurable ship speed
-🤖 Implant indicator
-🔫 Hold to Reload
-♻️ Move to Recycler hotkey
-🧮 Show item stack 
-    total count
+🖱️   Mouse Quick Toss Rebind
+🔫  Hold to Reload
+🚀  Configurable ship speed
+♻️  Move to Recycler hotkey
+🔦  (Experimental) Always 
+       Highlight Loot
+👀  QMeter Visual	  
+🪓  Split Stacks Hotkeys	
 ❗ More...
