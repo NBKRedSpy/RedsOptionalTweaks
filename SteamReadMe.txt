@@ -128,6 +128,7 @@ See the Compatibility - Technical section for details.
 [h2]Always Highlight Loot[/h2]
 
 The same as always holding the alt key when in a raid.
+This will be removed in a future version.  This is experimental and another mod is available on the Workshop.
 
 [h2]Q-Meter Visual[/h2]
 
@@ -163,19 +164,6 @@ Note that there is still a black fade, but that is based on how long the game ta
 
 When creating a new production order, hold shift to auto-open the amount dialog for the last recipe queued on the same production line.
 Use the Context Menu Hotkeys mod to quickly queue the order without needing to click the "Accept" button.
-
-This mod works as follows:
-[list]
-[*]If there was a previous order on the same production line, the "amount" dialog will be auto opened for that recipe.
-[*]The item filter will be reset to all items.
-[/list]
-
-If the player does not have the required materials for the previous recipe, the "amount" dialog will not be opened.
-The user must still accept the amount to create the order.  This method is use for simplicity and future compatibility.
-
-The filter must be reset as it can prevent items from being queued if the target item is not in the filter.
-
-I would like to simplify this process to a single click; But this would require a more invasive patch, which is more likely to break on future game changes.
 
 [h2]Show Experience Maxed[/h2]
 
@@ -218,12 +206,6 @@ The configuration can be changed with either the Mod Configuration Menu's "Mods"
 The config file is found at is found at [i]%AppData%\..\LocalLow\Magnum Scriptum Ltd\Quasimorph_ModConfigs\RedsOptionalTweaks\config.json[/i] and will be created the first time the game is run.  Changes will be applied when the game is restarted.
 
 For any key binding items, see the Key List section below.
-
-[h2]Key List[/h2]
-
-The list of valid keyboard keys can be found  at the bottom of https://docs.unity3d.com/ScriptReference/KeyCode.html
-Beware that numbers 0-9 are Alpha0 - Alpha9.  Most of the other keys are as expected such as X for X.
-Use "None" to not bind the key.
 
 [h1]Enjoying the Mods?[/h1]
 
