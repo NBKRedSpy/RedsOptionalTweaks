@@ -239,6 +239,10 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 
 See the https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/CHANGELOG.md for the list of changes.
 
+[h1]Search Tags[/h1]
+
+Highlight loot, recycle hotkey, ctrl move, quick move, quick toss, queue, faster ship speed, shorter travel time, binding.
+
 [h1]Credits[/h1]
 [list]
 [*]Special thanks to Crynano for his excellent Mod Configuration Menu.

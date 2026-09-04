@@ -139,6 +139,9 @@ Source code is available on GitHub at https://github.com/NBKRedSpy/RedsOptionalT
 # Changes
 See the https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/CHANGELOG.md for the list of changes.
 
+# Search Tags
+Highlight loot, recycle hotkey, ctrl move, quick move, quick toss, queue, faster ship speed, shorter travel time, binding.
+
 # Credits
 * Special thanks to Crynano for his excellent Mod Configuration Menu.
 * The TF2 RedSpy icon is from the reddit user [iwilding](https://www.reddit.com/user/iwilding/) from the post found [here](https://www.reddit.com/r/tf2/comments/2384j5/i_drew_a_red_spy/)
