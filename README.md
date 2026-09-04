@@ -56,11 +56,9 @@ Allows the user to bind the "quick toss" key.  This is where the user can hold t
 By default it is remapped to middle mouse button (AKA Mouse2).
 
 ## Hold Reload
-When moving or waiting a turn, holding the Reload key will continue to reload.  For example, if a shotgun requires a reload, the user can hold the Reload key while moving. For each step, a reload will occur as long as the user is still holding the Reload key.  Note that when holding reload, the reload doesn't actually start until the user ends the action.
+When moving or waiting a turn, holding the Reload key will continue to reload. 
 
 If you are looking for an automated version of the reload, check out Traveler's "Walk and Auto Reload" mod found [here](https://steamcommunity.com/sharedfiles/filedetails/?id=3601126533)
-
-The purpose of my modification is to mirror the base game's requirement to remember to reload, but remove the need to spam the Reload key. I think that forgetting to reload makes some memorable situations. 
 
 ## Faster Elevator
 ![Faster Elevator](https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/media/FasterElevator.gif)
