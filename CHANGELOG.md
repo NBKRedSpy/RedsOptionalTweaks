@@ -1,3 +1,7 @@
+# 1.10.0
+* Added Faster Elevator.
+* Added Repeat Production Order.
+
 # 1.9.3 
 * Moved Implant Indicator to its own mod at https://steamcommunity.com/sharedfiles/filedetails/?id=3781675766
 

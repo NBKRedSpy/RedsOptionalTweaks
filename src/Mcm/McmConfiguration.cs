@@ -57,6 +57,18 @@ namespace RedsOptionalTweaks.Mcm
                     header: "QMeter Visual"),
                 #endregion
 
+                #region Faster Elevator
+                CreateConfigProperty(nameof(ModConfig.EnableFasterElevator),
+                    "Increase the speed which the player changes levels.",
+                    header: "Faster Elevator"),
+                #endregion
+
+                #region Repeat Production Order
+                CreateConfigProperty(nameof(ModConfig.EnableRepeatProductionOrder),
+                    "When creating a production order, hold Shift to auto-open the amount dialog for the last queued recipe on that production line.",
+                    header: "Repeat Production Order"),
+                #endregion
+
                 #region Show Experience Maxed
                     CreateConfigProperty(nameof(ModConfig.EnableShowExpMaxed),
                     "Adds an astrisk to the Experience Gaining Item tooltip to indicate that the merc has the perk, but is already at max level",

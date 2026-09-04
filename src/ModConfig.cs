@@ -165,6 +165,24 @@ namespace RedsOptionalTweaks
 
         #endregion
 
+        #region Faster Elevator
+
+        /// <summary>
+        /// Increase the speed which the player changes levels.
+        /// </summary>
+        public bool EnableFasterElevator { get; set; } = false;
+
+        #endregion
+
+        #region Repeat Production Order
+
+        /// <summary>
+        /// When creating a production order, holding Shift auto-opens the amount dialog for the last queued recipe on the same production line.
+        /// </summary>
+        public bool EnableRepeatProductionOrder { get; set; } = false;
+
+        #endregion
+
 
         public ModConfig()
         {

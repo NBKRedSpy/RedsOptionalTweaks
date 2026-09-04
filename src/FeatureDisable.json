@@ -9,5 +9,7 @@
   "EnableImplantIndicator": true,
   "EnableShowExpMaxed": true,
   "EnableQMeterVisual": true,
+  "EnableFasterElevator": true,
+  "EnableRepeatProductionOrder": true,
   "EnableShowStationInfo": true
 }

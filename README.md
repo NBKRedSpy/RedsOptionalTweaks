@@ -2,14 +2,18 @@
 
 ![thumbnail icon](media/thumbnail.png)
 
-# Update Note
-Implant Indicator is now a standalone mod.  https://steamcommunity.com/sharedfiles/filedetails/?id=3781675766
 
+This is a collection of modifications.  Each change is individually enabled and by default all items are disabled.
+
+# Recent Additions
+
+* Faster Elevator
+* Repeat Production Order
 
 # Modifications Overview
 Below is a list of functionality in mod.  
 
-By default, each individual piece of functionality has to be turned on in the Mods -> Red's Optional Tweaks screen.
+By default, each individual piece of functionality has to be enabled by the user in the Mods -> Red's Optional Tweaks screen.
 This allows the user to choose only the changes they want.
 
 | Type | Name | Description |
@@ -21,6 +25,8 @@ This allows the user to choose only the changes they want.
 | QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | QMeter Visual| When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.|
+| QoL | Faster Elevator | Speed up changing levels by increasing the animation speed.|
+| QoL | Repeat Production Order | Quickly repeat the previous order in the production queue. See the [Repeat Production Order](#repeat-production-order) section.|
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
 
@@ -57,7 +63,28 @@ When moving or waiting a turn, holding the Reload key will continue to reload.  
 If you are looking for an automated version of the reload, check out Traveler's "Walk and Auto Reload" mod found [here](https://steamcommunity.com/sharedfiles/filedetails/?id=3601126533)
 
 The purpose of my modification is to mirror the base game's requirement to remember to reload, but remove the need to spam the Reload key. I think that forgetting to reload makes some memorable situations. 
- 
+
+## Faster Elevator
+![Faster Elevator](https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/media/FasterElevator.gif)
+
+Speed up changing levels by increasing the animation speed.  
+Note that there is still a black fade, but that is based on how long the game takes to load the level.
+
+## Repeat Production Order
+When creating a new production order, hold shift to auto-open the amount dialog for the last recipe queued on the same production line.
+Use the Context Menu Hotkeys mod to quickly queue the order without needing to click the "Accept" button.
+
+This mod works as follows:
+* If there was a previous order on the same production line, the "amount" dialog will be auto opened for that recipe.
+* The item filter will be reset to all items.
+
+If the player does not have the required materials for the previous recipe, the "amount" dialog will not be opened.
+The user must still accept the amount to create the order.  This method is use for simplicity and future compatibility.
+
+The filter must be reset as it can prevent items from being queued if the target item is not in the filter.
+
+I would like to simplify this process to a single click; But this would require a more invasive patch, which is more likely to break on future game changes.
+
 ## Show Experience Maxed
 ![Max Exp Tooltip](./media/MaxExp.webp)
 
@@ -117,3 +144,4 @@ See the https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/CHANGELOG.md f
 * The TF2 RedSpy icon is from the reddit user [iwilding](https://www.reddit.com/user/iwilding/) from the post found [here](https://www.reddit.com/r/tf2/comments/2384j5/i_drew_a_red_spy/)
 * The Ship Speed Boost is based on Steam user [critic](https://steamcommunity.com/id/cybercritic)'s mod [Ship Speed Boost](https://steamcommunity.com/sharedfiles/filedetails/?id=3548633074).  The functionality is replicated with permission.
 * TF2 Font is from [fontriver](https://www.fontriver.com/font/tf2_build/)
+* Animated gif conversion via https://ezgif.com/video-to-gif

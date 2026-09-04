@@ -16,7 +16,6 @@ namespace RedsOptionalTweaks.Mcm
         [JsonIgnore]
         public string ConfigPath { get; protected set; }
 
-
         /// <summary>
         /// Json Serializer Settings to use when serializing/deserializing the config.  
         /// </summary>

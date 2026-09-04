@@ -1,15 +1,19 @@
 [h1]Quasimorph Red's Optional Modifications Mod[/h1]
 
 
-[h1]Update Note[/h1]
+This is a collection of modifications.  Each change is individually enabled and by default all items are disabled.
 
-Implant Indicator is now a standalone mod.  https://steamcommunity.com/sharedfiles/filedetails/?id=3781675766
+[h1]Recent Additions[/h1]
+[list]
+[*]Faster Elevator
+[*]Repeat Production Order
+[/list]
 
 [h1]Modifications Overview[/h1]
 
 Below is a list of functionality in mod.
 
-By default, each individual piece of functionality has to be turned on in the Mods -> Red's Optional Tweaks screen.
+By default, each individual piece of functionality has to be enabled by the user in the Mods -> Red's Optional Tweaks screen.
 This allows the user to choose only the changes they want.
 [table]
 [tr]
@@ -79,6 +83,22 @@ This allows the user to choose only the changes they want.
 [tr]
 [td]QoL
 [/td]
+[td]Faster Elevator
+[/td]
+[td]Speed up changing levels by increasing the animation speed.
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
+[td]Repeat Production Order
+[/td]
+[td]Quickly repeat the previous order in the production queue. See the Repeat Production Order section.
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
 [td]Split Stacks Hotkeys
 [/td]
 [td]Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
@@ -132,6 +152,31 @@ When moving or waiting a turn, holding the Reload key will continue to reload.  
 If you are looking for an automated version of the reload, check out Traveler's "Walk and Auto Reload" mod found [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3601126533]here[/url]
 
 The purpose of my modification is to mirror the base game's requirement to remember to reload, but remove the need to spam the Reload key. I think that forgetting to reload makes some memorable situations.
+
+[h2]Faster Elevator[/h2]
+
+[img]https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/media/FasterElevator.gif[/img]
+
+Speed up changing levels by increasing the animation speed.
+Note that there is still a black fade, but that is based on how long the game takes to load the level.
+
+[h2]Repeat Production Order[/h2]
+
+When creating a new production order, hold shift to auto-open the amount dialog for the last recipe queued on the same production line.
+Use the Context Menu Hotkeys mod to quickly queue the order without needing to click the "Accept" button.
+
+This mod works as follows:
+[list]
+[*]If there was a previous order on the same production line, the "amount" dialog will be auto opened for that recipe.
+[*]The item filter will be reset to all items.
+[/list]
+
+If the player does not have the required materials for the previous recipe, the "amount" dialog will not be opened.
+The user must still accept the amount to create the order.  This method is use for simplicity and future compatibility.
+
+The filter must be reset as it can prevent items from being queued if the target item is not in the filter.
+
+I would like to simplify this process to a single click; But this would require a more invasive patch, which is more likely to break on future game changes.
 
 [h2]Show Experience Maxed[/h2]
 
@@ -200,4 +245,5 @@ See the https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/CHANGELOG.md f
 [*]The TF2 RedSpy icon is from the reddit user [url=https://www.reddit.com/user/iwilding/]iwilding[/url] from the post found [url=https://www.reddit.com/r/tf2/comments/2384j5/i_drew_a_red_spy/]here[/url]
 [*]The Ship Speed Boost is based on Steam user [url=https://steamcommunity.com/id/cybercritic]critic[/url]'s mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3548633074]Ship Speed Boost[/url].  The functionality is replicated with permission.
 [*]TF2 Font is from [url=https://www.fontriver.com/font/tf2_build/]fontriver[/url]
+[*]Animated gif conversion via https://ezgif.com/video-to-gif
 [/list]
