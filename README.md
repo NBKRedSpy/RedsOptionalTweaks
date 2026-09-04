@@ -61,7 +61,7 @@ When moving or waiting a turn, holding the Reload key will continue to reload.
 If you are looking for an automated version of the reload, check out Traveler's "Walk and Auto Reload" mod found [here](https://steamcommunity.com/sharedfiles/filedetails/?id=3601126533)
 
 ## Faster Elevator
-![Faster Elevator](https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/media/FasterElevator.gif)
+![Faster Elevator](./media/FasterElevator.gif)
 
 Speed up changing levels by increasing the animation speed.  
 Note that there is still a black fade, but that is based on how long the game takes to load the level.
@@ -69,6 +69,8 @@ Note that there is still a black fade, but that is based on how long the game ta
 ## Repeat Production Order
 When creating a new production order, hold shift to auto-open the amount dialog for the last recipe queued on the same production line.
 Use the Context Menu Hotkeys mod to quickly queue the order without needing to click the "Accept" button.
+
+![Repeat Order example](./media/RepeatOrder.gif)
 
 ## Show Experience Maxed
 ![Max Exp Tooltip](./media/MaxExp.webp)
