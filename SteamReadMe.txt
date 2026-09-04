@@ -1,4 +1,3 @@
-[h1]Quasimorph Red's Optional Modifications Mod[/h1]
 
 
 This is a collection of modifications.  Each change is individually enabled and by default all items are disabled.
@@ -241,7 +240,7 @@ See the https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/CHANGELOG.md f
 
 [h1]Search Tags[/h1]
 
-Highlight loot, recycle hotkey, ctrl move, quick move, quick toss, queue, faster ship speed, shorter travel time, binding.
+Highlight loot, recycle hotkey, ctrl move, quick move, quick toss, queue, faster ship speed, shorter travel time, binding, ROMP.
 
 [h1]Credits[/h1]
 [list]
