@@ -67,6 +67,11 @@ namespace RedsOptionalTweaks.Mcm
                 CreateConfigProperty(nameof(ModConfig.EnableRepeatProductionOrder),
                     "When creating a production order, hold Shift to auto-open the amount dialog for the last queued recipe on that production line.",
                     header: "Repeat Production Order"),
+
+                CreateConfigProperty(nameof(ModConfig.RightClickToRepeatProductionOrder),
+                    "Disable if there is a conflict with the production order screen using the right click to repeat the last order.",
+                    header: "Repeat Production Order"),
+
                 #endregion
 
                 #region Show Experience Maxed

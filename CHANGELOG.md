@@ -1,3 +1,7 @@
+# 1.11.0
+* Repeat Production Order: Can now right click or hold left shift and click.
+
+
 # 1.10.0
 * Added Faster Elevator.
 * Added Repeat Production Order.

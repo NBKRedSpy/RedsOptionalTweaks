@@ -10,6 +10,11 @@ This is a collection of modifications.  Each change is individually enabled and 
 [*]Repeat Production Order
 [/list]
 
+[h1]Docs[/h1]
+
+Due to Steam having a limit on a mod's description, the feature details and images can be found at https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/README.md
+Below is a quick summary.
+
 [h1]Modifications Overview[/h1]
 
 Below is a list of functionality in mod.
@@ -94,7 +99,7 @@ This allows the user to choose only the changes they want.
 [/td]
 [td]Repeat Production Order
 [/td]
-[td]Quickly repeat the previous order in the production queue. See the Repeat Production Order section.
+[td]Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking.
 [/td]
 [/tr]
 [tr]
@@ -116,11 +121,6 @@ This allows the user to choose only the changes they want.
 [/table]
 
 🧪 More items in the future...
-
-Unfortunately Steam has a limit of how much text can be put in a mod's description.
-
-See the full documentation and images here:
-https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/README.md
 
 [h2]Maximum Compatibility[/h2]
 

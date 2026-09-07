@@ -6,6 +6,11 @@ This is a collection of modifications.  Each change is individually enabled and 
 # Recent Additions
 * Faster Elevator
 * Repeat Production Order
+
+# Docs
+Due to Steam having a limit on a mod's description, the feature details and images can be found at https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/README.md
+Below is a quick summary.
+
 # Modifications Overview
 Below is a list of functionality in mod.  
 
@@ -22,16 +27,12 @@ This allows the user to choose only the changes they want.
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | QMeter Visual| When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.|
 | QoL | Faster Elevator | Speed up changing levels by increasing the animation speed.|
-| QoL | Repeat Production Order | Quickly repeat the previous order in the production queue. See the [Repeat Production Order](#repeat-production-order) section.|
+| QoL | Repeat Production Order | Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking.|
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
 
  🧪 More items in the future...
 
-Unfortunately Steam has a limit of how much text can be put in a mod's description.
-
-See the full documentation and images here:
-https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/README.md
 
 ## Maximum Compatibility
 Each modification works like its own mini-mod. Disable one, and it's as if it was never there.  This is useful for working around bugs or handling conflicts with other mods.

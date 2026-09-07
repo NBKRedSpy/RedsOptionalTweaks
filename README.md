@@ -23,7 +23,7 @@ This allows the user to choose only the changes they want.
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | QMeter Visual| When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.|
 | QoL | Faster Elevator | Speed up changing levels by increasing the animation speed.|
-| QoL | Repeat Production Order | Quickly repeat the previous order in the production queue. See the [Repeat Production Order](#repeat-production-order) section.|
+| QoL | Repeat Production Order | Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking. See the [Repeat Production Order](#repeat-production-order) section.|
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
 
@@ -67,7 +67,7 @@ Speed up changing levels by increasing the animation speed.
 Note that there is still a black fade, but that is based on how long the game takes to load the level.
 
 ## Repeat Production Order
-When creating a new production order, hold shift to auto-open the amount dialog for the last recipe queued on the same production line.
+When creating a new production order, right click, or hold shift while clicking the plus icon to auto-open the amount dialog for the last recipe queued on the same production line.
 Use the Context Menu Hotkeys mod to quickly queue the order without needing to click the "Accept" button.
 
 ![Repeat Order example](./media/RepeatOrder.gif)

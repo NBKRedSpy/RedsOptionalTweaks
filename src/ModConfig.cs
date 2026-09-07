@@ -181,6 +181,11 @@ namespace RedsOptionalTweaks
         /// </summary>
         public bool EnableRepeatProductionOrder { get; set; } = false;
 
+        /// <summary>
+        /// Disable if there is a conflict with the production order screen using the right click to repeat the last order.
+        /// </summary>
+        public bool RightClickToRepeatProductionOrder { get; set; } = true;
+
         #endregion
 
 

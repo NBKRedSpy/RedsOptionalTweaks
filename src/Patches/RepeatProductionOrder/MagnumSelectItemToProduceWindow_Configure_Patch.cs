@@ -19,10 +19,10 @@ namespace RedsOptionalTweaks.Patches.RepeatProductionOrder
                 Plugin.Config.EnableRepeatProductionOrder);
         }
 
-        public static void Postfix(MagnumSelectItemToProduceWindow __instance)
+        public static void Postfix()
         {
 
-            AutoOpenPreviousRecipe = InputHelper.GetKey(UnityEngine.KeyCode.LeftShift);
+            AutoOpenPreviousRecipe |= InputHelper.GetKey(UnityEngine.KeyCode.LeftShift);
         }
     }
 
