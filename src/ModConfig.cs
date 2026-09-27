@@ -49,6 +49,11 @@ namespace RedsOptionalTweaks
         public bool EnableAlwaysHighlight { get; set; } = false;
         #endregion
 
+        /// <summary>
+        /// Changes the tooltip to show the durability differences.
+        /// </summary>
+        public bool EnableShowDurabilityDelta { get; set; } = false;
+
         public bool EnableShowExpMaxed { get; set; } = false;   
 
         #region Context Menu Split Stack Settings
@@ -187,7 +192,6 @@ namespace RedsOptionalTweaks
         public bool RightClickToRepeatProductionOrder { get; set; } = true;
 
         #endregion
-
 
         public ModConfig()
         {

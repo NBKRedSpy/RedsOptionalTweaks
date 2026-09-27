@@ -34,6 +34,12 @@ namespace RedsOptionalTweaks.Mcm
                     header: "Hold to Reload"),
                 #endregion
 
+
+                CreateConfigProperty(nameof(ModConfig.EnableShowDurabilityDelta),
+                    "Changes the breakable items tooltip to include the missing durability and the missing max durability.",
+                    header: "Show Durability Delta"),
+
+
                 #region Always Highlight
                 CreateConfigProperty(nameof(ModConfig.EnableAlwaysHighlight),
                     "Enables always-on loot highlighting without holding Alt.",

@@ -25,6 +25,7 @@ This allows the user to choose only the changes they want.
 | QoL | Faster Elevator | Speed up changing levels by increasing the animation speed.|
 | QoL | Repeat Production Order | Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking. See the [Repeat Production Order](#repeat-production-order) section.|
 | QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
+| QoL | Show Durability Delta | Changes the breakable items tooltip to include the missing durability and the missing max durability from previous repairs.|
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
 
  🧪 More items in the future...
@@ -71,6 +72,13 @@ When creating a new production order, right click, or hold shift while clicking 
 Use the Context Menu Hotkeys mod to quickly queue the order without needing to click the "Accept" button.
 
 ![Repeat Order example](./media/RepeatOrder.gif)
+
+## Show Durability Delta
+![Durability tooltip example](./media/DurabilityDelta.png)
+
+Adds a second negative number to durability to show how much durability is missing from the current max durability, as well
+as the amount of maximum durability is missing due to previous repairs.
+
 
 ## Show Experience Maxed
 ![Max Exp Tooltip](./media/MaxExp.webp)

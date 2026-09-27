@@ -113,6 +113,14 @@ This allows the user to choose only the changes they want.
 [tr]
 [td]QoL
 [/td]
+[td]Show Durability Delta
+[/td]
+[td]Changes the breakable items tooltip to include the missing durability and the missing max durability from previous repairs.
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
 [td]Show Experience Maxed
 [/td]
 [td]Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level

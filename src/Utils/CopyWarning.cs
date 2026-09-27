@@ -19,10 +19,13 @@ namespace RedsOptionalTweaks.Utils
 
         public string MethodName { get; set; }
 
-        public CopyWarning(Type type, string methodName) 
+        public string Description { get; set; }
+
+        public CopyWarning(Type type, string methodName, string description = null) 
         {
             Type = type;
             MethodName = methodName;
+            Description = description;
         }
     }
 }

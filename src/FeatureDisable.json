@@ -11,5 +11,6 @@
   "EnableQMeterVisual": true,
   "EnableFasterElevator": true,
   "EnableRepeatProductionOrder": true,
-  "EnableShowStationInfo": true
+  "EnableShowStationInfo": true,
+  "EnableShowDurabilityDelta":  true
 }
