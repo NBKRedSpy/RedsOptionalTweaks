@@ -10,11 +10,13 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using UnityEngine;
 using System.Runtime.CompilerServices;
+using Newtonsoft.Json.Linq;
 
 namespace RedsOptionalTweaks
 {
     public class ModConfig : PersistentConfig<ModConfig>
     {
+        public int ConfigVersion { get; private set; } = 1;
 
         /// <summary>
         /// The Key to use to transfer items via mouse.  Game defaults to control key.
@@ -40,6 +42,13 @@ namespace RedsOptionalTweaks
         /// Enables the ability to hold the reload key to continiously reload weapons while it is held.
         /// </summary>
         public bool EnableHoldToReload { get; set; } = false;
+        #endregion
+
+        #region Mercenary Class Out Of Date
+        /// <summary>
+        /// Highlights mercenaries that are using an older version of the class.
+        /// </summary>
+        public bool EnableShowMercenaryClassOutOfDate { get; set; } = false;
         #endregion
 
         #region Always Highlight
@@ -95,10 +104,15 @@ namespace RedsOptionalTweaks
         #endregion
 
 
-        #region Recycle Hotkey
-        public bool EnableRecycleHotkey { get; set; }
+        #region Recycle and Fridge Hotkey
+        public bool EnableRecycleFridgeHotkeys { get; set; }
 
         public KeyCode RecycleHotkey { get; set; } = KeyCode.R;
+
+        /// <summary>
+        /// The key to hold to move the hovered item into the freezer tab.
+        /// </summary>
+        public KeyCode FreezerHotkey{ get; set; } = KeyCode.F;
 
         #endregion
 
@@ -179,6 +193,15 @@ namespace RedsOptionalTweaks
 
         #endregion
 
+        #region Show Capsule Amount
+
+        /// <summary>
+        /// Shows the number of available capsule drops on the Call Capsule button.
+        /// </summary>
+        public bool EnableShowCapsuleAmount { get; set; } = false;
+
+        #endregion
+
         #region Repeat Production Order
 
         /// <summary>
@@ -200,5 +223,36 @@ namespace RedsOptionalTweaks
 
         public ModConfig(string configPath) : base(configPath) { }
 
+        /// <summary>
+        /// Check for config version.
+        /// </summary>
+        override protected void UpgradeConfig()
+        {
+            try
+            {
+                string sourceJson = File.ReadAllText(ConfigPath);
+                JObject root = JObject.Parse(sourceJson);
+
+                JToken versionToken = root["ConfigVersion"];
+                if (((int?)versionToken ?? 0) == 1)
+                {
+                    return;
+                }
+
+                root["ConfigVersion"] = 1;
+
+                JToken oldValue = root["EnableRecycleHotkey"];
+                if (oldValue != null)
+                {
+                    root["EnableRecycleFridgeHotkeys"] = oldValue.DeepClone();
+                }
+
+                File.WriteAllText(ConfigPath, root.ToString(Formatting.Indented));
+            }
+            catch (Exception ex)
+            {
+                Plugin.Logger.LogError(ex, "Error parsing configuration for upgrade");
+            }
+        }
     }
 }

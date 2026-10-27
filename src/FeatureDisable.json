@@ -3,14 +3,16 @@
   "EnableMouseQuickTossKey": true,
   "EnableShipSpeedBoost": true,
   "EnableHoldToReload": true,
+  "EnableShowMercenaryClassOutOfDate": true,
   "EnableSplitStacksKeys": true,
-  "EnableRecycleHotkey": true,
+  "EnableRecycleFridgeHotkeys": true,
   "EnableStackTotalInventoryCount": true,
   "EnableImplantIndicator": true,
   "EnableShowExpMaxed": true,
   "EnableQMeterVisual": true,
   "EnableFasterElevator": true,
+  "EnableShowCapsuleAmount": true,
   "EnableRepeatProductionOrder": true,
   "EnableShowStationInfo": true,
-  "EnableShowDurabilityDelta":  true
+  "EnableShowDurabilityDelta": true
 }

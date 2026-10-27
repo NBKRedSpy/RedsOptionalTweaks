@@ -34,6 +34,15 @@ namespace RedsOptionalTweaks.Mcm
                     header: "Hold to Reload"),
                 #endregion
 
+                #region Mercenary Class Out Of Date
+                CreateConfigProperty(nameof(ModConfig.EnableShowMercenaryClassOutOfDate),
+                    """
+                    Highlights mercenaries that are using an older version of the class.  
+                    Useful when the player wants to have the latest perks for a class on a mercenary.
+                    """,
+                    header: "Mercenary Class Out Of Date"),
+                #endregion
+
 
                 CreateConfigProperty(nameof(ModConfig.EnableShowDurabilityDelta),
                     "Changes the breakable items tooltip to include the missing durability and the missing max durability.",
@@ -67,6 +76,12 @@ namespace RedsOptionalTweaks.Mcm
                 CreateConfigProperty(nameof(ModConfig.EnableFasterElevator),
                     "Increase the speed which the player changes levels.",
                     header: "Faster Elevator"),
+                #endregion
+
+                #region Show Capsule Amount
+                CreateConfigProperty(nameof(ModConfig.EnableShowCapsuleAmount),
+                    "Shows the number of available capsule drops on the Call Capsule button.",
+                    header: "Show Capsule Amount"),
                 #endregion
 
                 #region Repeat Production Order
@@ -141,15 +156,21 @@ namespace RedsOptionalTweaks.Mcm
 
                 #endregion
 
-                #region Recycle Hotkey
-                CreateConfigProperty(nameof(ModConfig.EnableRecycleHotkey),
-                    "Enables a hotkey to recycle items from the inventory screen.  This allows the user to hold down the recycle key " +
-                    "(defaults to R) to move items directly to the recycler in the inventory screen.",
-                    header: "Recycle Hotkey"),
+                #region Recycle and Fridge Hotkey
+                CreateConfigProperty(nameof(ModConfig.EnableRecycleFridgeHotkeys),
+                    """
+                    Enables hotkeys to quick move items to the recycler or freezer from the inventory screen.  The user can hold the configured hotkey
+                    to quick move the item to the recycler or freezer.  The default hotkey is R for the recycler and F for the freezer.
+                    """,
+                    header: "Recycle and Fridge Hotkey"),
 
                 CreateEnumDropdown<KeyCode>(nameof(ModConfig.RecycleHotkey),
                     "The key to use to recycle items from the inventory screen.",
-                    "Recycle Hotkey", "Recycle Hotkey"),
+                    header: "Recycle and Fridge Hotkey"),
+
+                CreateEnumDropdown<KeyCode>(nameof(ModConfig.FreezerHotkey),
+                    "The key to use to move items to the freezer from the inventory screen.",
+                    header: "Recycle and Fridge Hotkey"),
 
                 #endregion
 

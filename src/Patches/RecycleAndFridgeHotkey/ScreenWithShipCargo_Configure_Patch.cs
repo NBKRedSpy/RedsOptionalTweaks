@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace RedsOptionalTweaks.Patches.RecycleHotkey
+namespace RedsOptionalTweaks.Patches.RecycleAndFridgeHotkey
 {
     /// <summary>
     /// Attaches the Recycling hotkey functionality to the Arsenal screen.
@@ -20,8 +20,8 @@ namespace RedsOptionalTweaks.Patches.RecycleHotkey
         public static bool Prepare()
         {
             return Plugin.DisableManager.IsFeatureEnabled(
-                nameof(ModConfig.EnableRecycleHotkey),
-                Plugin.Config.EnableRecycleHotkey);
+                nameof(ModConfig.EnableRecycleFridgeHotkeys),
+                Plugin.Config.EnableRecycleFridgeHotkeys);
         }
 
         public static void Prefix(ArsenalScreen __instance)

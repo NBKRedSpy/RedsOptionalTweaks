@@ -4,8 +4,8 @@
 
 This is a collection of modifications.  Each change is individually enabled and by default all items are disabled.
 # Recent Additions
-* Faster Elevator
-* Repeat Production Order
+* Call Capsule Button - Show Capsule usage count.
+* Quick Move to Fridge 
 
 # Docs
 Due to Steam having a limit on a mod's description, the feature details and images can be found at https://github.com/NBKRedSpy/RedsOptionalTweaks/blob/main/README.md
@@ -20,17 +20,20 @@ This allows the user to choose only the changes they want.
 | Type | Name | Description |
 | :--- | :--- | :--- |
 | Balance | Ship Speed Boost | Increase the speed of ship travel. |
-| QoL | Always Highlight Loot | Always highlights look when in a raid.  Similar to always holding the alt key|
-| QoL | Recycle Hotkey Quick Move | Hold R while hovering over items in the ship cargo to move that item to the recycler tab. |
-| QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
+| QoL | Always Highlight Loot | Always highlights look when in a raid.  Similar to always holding the alt key.|
+| QoL | Faster Elevator | Speed up changing levels by increasing the animation speed.|
 | QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | QMeter Visual| When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.|
-| QoL | Faster Elevator | Speed up changing levels by increasing the animation speed.|
-| QoL | Repeat Production Order | Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking.|
-| QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
+| QoL | Recycle and Fridge Hotkey | Hold R when hovering over an item to quick move it to the recycler.  Hold F to move to the refrigerator.|
+| QoL | Repeat Production Order | Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking. See the [Repeat Production Order](#repeat-production-order) section.|
+| QoL | Show Capsule Amount | During a raid, shows the amount of Capsules are currently available on the "Call Capsule" button.|
 | QoL | Show Durability Delta | Changes the breakable items tooltip to include the missing durability and the missing max durability from previous repairs.|
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
+| Qol | Show Mercenary Class Out Of Date | Highlights mercs that have a class which does not match the latest perks for that class. Ex: Changed a perk and the mercenary still has the old version.|
+| QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
+| QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
+
 
  🧪 More items in the future...
 

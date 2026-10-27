@@ -4,8 +4,8 @@ This is a collection of modifications.  Each change is individually enabled and 
 
 # Recent Additions
 
-* Faster Elevator
-* Repeat Production Order
+* Show Capsule Amount
+* Show Mercenary Class Out of Date
 
 # Modifications Overview
 Below is a list of functionality in mod.  
@@ -16,17 +16,19 @@ This allows the user to choose only the changes they want.
 | Type | Name | Description |
 | :--- | :--- | :--- |
 | Balance | Ship Speed Boost | Increase the speed of ship travel. |
-| QoL | Always Highlight Loot | Always highlights look when in a raid.  Similar to always holding the alt key|
-| QoL | Recycle Hotkey Quick Move | Hold R while hovering over items in the ship cargo to move that item to the recycler tab. |
-| QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
+| QoL | Always Highlight Loot | Always highlights look when in a raid.  Similar to always holding the alt key.|
+| QoL | Faster Elevator | Speed up changing levels by increasing the animation speed.|
 | QoL | Hold Reload|Can hold the reload key to keep reloading when waiting and moving.  Useful for single load weapons|
 | QoL | Mouse Quick Toss Rebind | Change the key bind for what the game calls "Fast Toss". By default the game uses the Control key to move items between storage panes. |
 | QoL | QMeter Visual| When in a raid, changes the QMorphos state name to yellow when above 800. This matches the music intensity change in the game at this level.|
-| QoL | Faster Elevator | Speed up changing levels by increasing the animation speed.|
+| QoL | Recycle and Fridge Hotkey | Hold R when hovering over an item to quick move it to the recycler.  Hold F to move to the refrigerator.|
 | QoL | Repeat Production Order | Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking. See the [Repeat Production Order](#repeat-production-order) section.|
-| QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
+| QoL | Show Capsule Amount | During a raid, shows the amount of Capsules are currently available on the "Call Capsule" button.|
 | QoL | Show Durability Delta | Changes the breakable items tooltip to include the missing durability and the missing max durability from previous repairs.|
 | QoL | Show Experience Maxed | Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
+| Qol | Show Mercenary Class Out Of Date | Highlights mercs that have a class which does not match the latest perks for that class. Ex: Changed a perk and the mercenary still has the old version.|
+| QoL | Split Stacks Hotkeys | Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys. |
+| QoL | Stack Total Inventory Count| When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip|
 
  🧪 More items in the future...
 
@@ -43,6 +45,12 @@ See the [Compatibility - Technical](#compatibility---technical) section for deta
 The same as always holding the alt key when in a raid.
 This will be removed in a future version.  This is experimental and another mod is available on the Workshop.
 
+## Show Capsule Amount
+Shows the number of available capsule drops on the Call Capsule button.
+Useful when trying to determine if a capsule should be used or not.
+
+![Capsule Count](./media/Capsule%20Count.png)
+
 ## Q-Meter Visual
 ![Q-Meter](./media/QmorphosVisual.webp)
 
@@ -55,6 +63,11 @@ Changes the ship's speed to decrease travel times.  By default this sets the shi
 ## Mouse Quick Toss Rebind
 Allows the user to bind the "quick toss" key.  This is where the user can hold the ctrl key down while the mouse is over an item to move the item to the other inventory.
 By default it is remapped to middle mouse button (AKA Mouse2).
+
+## Show Mercenary Class Out Of Date
+Highlights mercs that have a class which does not match the latest perks for that class. Ex: Changed a perk and the mercenary still has the old version.
+
+![Out of Date Highlight](./media/OutdatedMerc.png)
 
 ## Hold Reload
 When moving or waiting a turn, holding the Reload key will continue to reload. 
@@ -91,8 +104,8 @@ Adds increase and decrease hotkeys to change the value by one.  By default it is
 Adds up to five preset amounts.  For example, the user can press 1 and the dialog will change the "keep" amount (the number on the right) to 10.
 By default, 1 is set to 10, and 2 is set to 5.
 
-## Recycle Hotkey Quick Move
-Hold R while hovering over items in the ship cargo to move that item to the recycler tab.  Avoids needing to move each item to the recycler with drag and drop.
+## Recycle and Fridge Hotkey
+Hold R when hovering over an item to quick move it to the recycler.  Hold F to move to the refrigerator.|
 
 ## Stack Total Inventory Count
 When in a screen that shows item stacks, holding alt will show the total amount of each item type that are owned.  This is the same count as found in the tooltip when hovering an item.

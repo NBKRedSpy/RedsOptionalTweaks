@@ -40,13 +40,23 @@ namespace RedsOptionalTweaks.Mcm
             ConfigPath = configPath;
         }
 
+        /// <summary>
+        /// Invoked during the LoadConfig call.  Is called before any logic in LoadConfig occurs.
+        /// Any config upgrade code should be implemented here.
+        /// </summary>
+        protected virtual void UpgradeConfig()
+        {
+            // Override this method to implement config upgrade logic if needed.
+        }
+
         public T LoadConfig()
         {
             T config;
 
-
             if (File.Exists(ConfigPath))
             {
+                UpgradeConfig();
+
                 try
                 {
                     string sourceJson = File.ReadAllText(ConfigPath);

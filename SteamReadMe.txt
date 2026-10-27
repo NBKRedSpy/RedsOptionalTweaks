@@ -6,8 +6,8 @@ This is a collection of modifications.  Each change is individually enabled and 
 
 [h1]Recent Additions[/h1]
 [list]
-[*]Faster Elevator
-[*]Repeat Production Order
+[*]Call Capsule Button - Show Capsule usage count.
+[*]Quick Move to Fridge
 [/list]
 
 [h1]Docs[/h1]
@@ -43,23 +43,15 @@ This allows the user to choose only the changes they want.
 [/td]
 [td]Always Highlight Loot
 [/td]
-[td]Always highlights look when in a raid.  Similar to always holding the alt key
+[td]Always highlights look when in a raid.  Similar to always holding the alt key.
 [/td]
 [/tr]
 [tr]
 [td]QoL
 [/td]
-[td]Recycle Hotkey Quick Move
+[td]Faster Elevator
 [/td]
-[td]Hold R while hovering over items in the ship cargo to move that item to the recycler tab.
-[/td]
-[/tr]
-[tr]
-[td]QoL
-[/td]
-[td]Stack Total Inventory Count
-[/td]
-[td]When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip
+[td]Speed up changing levels by increasing the animation speed.
 [/td]
 [/tr]
 [tr]
@@ -89,9 +81,9 @@ This allows the user to choose only the changes they want.
 [tr]
 [td]QoL
 [/td]
-[td]Faster Elevator
+[td]Recycle and Fridge Hotkey
 [/td]
-[td]Speed up changing levels by increasing the animation speed.
+[td]Hold R when hovering over an item to quick move it to the recycler.  Hold F to move to the refrigerator.
 [/td]
 [/tr]
 [tr]
@@ -99,15 +91,15 @@ This allows the user to choose only the changes they want.
 [/td]
 [td]Repeat Production Order
 [/td]
-[td]Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking.
+[td]Quickly repeat the previous order in the production queue by right clicking or holding shift and clicking. See the Repeat Production Order section.
 [/td]
 [/tr]
 [tr]
 [td]QoL
 [/td]
-[td]Split Stacks Hotkeys
+[td]Show Capsule Amount
 [/td]
-[td]Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
+[td]During a raid, shows the amount of Capsules are currently available on the "Call Capsule" button.
 [/td]
 [/tr]
 [tr]
@@ -124,6 +116,30 @@ This allows the user to choose only the changes they want.
 [td]Show Experience Maxed
 [/td]
 [td]Adds an asterisk to the Experience Item gain tooltip if the merc has the perk, but is already at the max level
+[/td]
+[/tr]
+[tr]
+[td]Qol
+[/td]
+[td]Show Mercenary Class Out Of Date
+[/td]
+[td]Highlights mercs that have a class which does not match the latest perks for that class. Ex: Changed a perk and the mercenary still has the old version.
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
+[td]Split Stacks Hotkeys
+[/td]
+[td]Adds hotkeys for amount presets and adds "increase" and "decrease" hotkeys.
+[/td]
+[/tr]
+[tr]
+[td]QoL
+[/td]
+[td]Stack Total Inventory Count
+[/td]
+[td]When holding the alt key, the count on stacks will show the total amount of that item owned. This is identical to the number that is shown in the item's tooltip
 [/td]
 [/tr]
 [/table]

@@ -1,3 +1,8 @@
+# 1.13.0
+* Added Capsule Count
+* Added Class Out of Date highlight.
+* Refrigerator quick move key.
+
 # 1.12.0 
 * Added missing durability numbers to breakable items tooltip.
 
